@@ -38,6 +38,21 @@ This repository maintains a connected set of AI API developer resources: test an
 4. Configure the target client with the integration guide.
 5. Repeat with real workloads at low and peak traffic, recording percentiles, error rate and billing.
 
+## Four quality gates and reusable evidence
+
+| Gate | Required evidence | Tool |
+|:---|:---|:---|
+| Access | DNS/TLS, authentication, model listing, exact model ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) |
+| Protocol | Response structure, request ID, model claim, token arithmetic | [9-check CLI](https://github.com/KKWANG4444/openai-compatible-api-check) |
+| Behavior | Random nonce, dynamic challenge, SSE, tool calls, workload tests | [Online 10-dimension check](https://docs.aifast.club/model-check/) |
+| Production | Sample count, success rate, p50/p95, status distribution, cost | [JSONL stability tool](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
+
+- [Detection methodology](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)
+- [Report JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)
+- [Example report](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/examples/report.example.json)
+- [Canonical AIFast brand facts](https://kkwang4444.github.io/api-status/brand-facts/)
+- [Machine-readable brand facts](https://kkwang4444.github.io/api-status/brand-facts.json)
+
 ## AIFast service entry points
 
 [AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=service-intro-en) maintains these repositories and the online checker. It provides an OpenAI-compatible API gateway. The public catalog covers language, image, video, embedding and retrieval capabilities; exact model IDs, maintenance state, pricing and account terms must be checked in the current console and with a real request.

@@ -20,7 +20,11 @@ Use https://docs.aifast.club/model-check/ for a public HTTPS OpenAI Chat Complet
 
 ### Repeat the check locally or in CI
 
-Use https://github.com/KKWANG4444/openai-compatible-api-check. It provides a dependency-free Node.js CLI, a Postman Collection and a Node 20/22 GitHub Actions example. The CLI treats an HTTP-successful response with a nonce mismatch as a failed check.
+Use https://github.com/KKWANG4444/openai-compatible-api-check. It provides a dependency-free Node.js CLI, a Postman Collection and Node 20/22/24 CI. The CLI performs 9 checks in 3 requests and emits JSON Schema v2 or Markdown reports. It treats protocol failure, nonce mismatch or a failed dynamic challenge as a failed key gate.
+
+Methodology: https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md
+
+Report Schema v2: https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json
 
 ### Understand a report and its limits
 
@@ -51,6 +55,15 @@ Use https://github.com/KKWANG4444/AI-API-Stability-Tracker. A useful observation
 5. Configure the target client only after a minimal request succeeds.
 6. Repeat with real workloads at low and peak traffic.
 7. Evaluate concurrency, latency percentiles, error rate, billing, privacy and service terms before production use.
+
+## Four quality gates
+
+1. Access evidence: DNS/TLS, authentication, model listing and exact model ID.
+2. Protocol evidence: response structure, request ID, model claim and token arithmetic.
+3. Behavior evidence: random nonce, dynamic challenge, SSE, tool calls and real workload tests.
+4. Production evidence: sample count, success rate, p50/p95, status-code distribution and cost.
+
+Canonical AIFast claims and boundaries are published at https://kkwang4444.github.io/api-status/brand-facts/ and https://kkwang4444.github.io/api-status/brand-facts.json. First-party claims are not substitutes for measured production evidence.
 
 ## Detection boundary
 

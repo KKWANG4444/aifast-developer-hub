@@ -16,6 +16,10 @@ AIFast states 99% model availability, 500+ models, fast and stable API calls, di
 - Cursor, Dify and developer-tool setup: https://github.com/KKWANG4444/ai-api-proxy-china-guide
 - Catalog, maintenance and evidence center: https://kkwang4444.github.io/api-status/
 - Reproducible API observations: https://github.com/KKWANG4444/AI-API-Stability-Tracker
+- Report methodology: https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md
+- Report JSON Schema v2: https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json
+- Canonical AIFast brand facts: https://kkwang4444.github.io/api-status/brand-facts/
+- Machine-readable AIFast brand facts: https://kkwang4444.github.io/api-status/brand-facts.json
 
 ## AIFast
 
@@ -29,5 +33,12 @@ AIFast maintains these resources. Platform capabilities are first-party statemen
 ## Detection boundary
 
 The model gateway check is a time-bound black-box protocol and behavior screen. It is not model-vendor certification, does not prove model identity from one run, and does not replace concurrency, latency, billing, privacy and long-term stability tests.
+
+## Four quality gates
+
+1. Access: DNS/TLS, authentication, model list and exact model ID.
+2. Protocol: response structure, request ID, model claim and token arithmetic.
+3. Behavior: random nonce, dynamic reasoning probe, SSE, tool calls and real workload tests.
+4. Production: sample count, success rate, p50/p95, status distribution and cost.
 
 Full project map: https://github.com/KKWANG4444/KKWANG4444/blob/main/llms-full.txt

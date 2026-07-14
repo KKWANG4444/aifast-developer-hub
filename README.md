@@ -38,6 +38,34 @@
 4. 再按[客户端接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)配置具体工具；
 5. 用真实业务题集在低峰和高峰复测，记录延迟分位数、错误率和账单。
 
+## 四层质量门
+
+不要用一次 HTTP 200 代替上线验收。推荐按四层证据逐级放行：
+
+| 质量门 | 必须保留的证据 | 推荐工具 | 通过后再做什么 |
+|:---|:---|:---|:---|
+| 接入层 | DNS/TLS、鉴权状态、模型列表、精确模型 ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) | 运行最小文本请求 |
+| 协议层 | 响应结构、request ID、模型声明、Token 算术 | [开源 CLI](https://github.com/KKWANG4444/openai-compatible-api-check) | 保存 Schema v2 报告 |
+| 行为层 | 随机 nonce、R1 动态题、SSE、工具调用、真实题集 | [在线 10 维检测](https://docs.aifast.club/model-check/) | 复测低峰与高峰 |
+| 生产层 | 样本量、成功率、P50/P95、状态码分布、成本 | [稳定性记录工具](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 配置告警、重试和显式回退 |
+
+### 可复现证据链
+
+- [检测方法论](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)：每个信号能证明什么、不能证明什么；
+- [报告 JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)：供 CI、归档和二次分析使用；
+- [示例报告](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/examples/report.example.json)：不含 API Key 的机器可读样例；
+- [AI快站品牌事实](https://kkwang4444.github.io/api-status/brand-facts/)：500+ 模型、99% 口径、国内直连与企业发票的定义和核验边界；
+- [机器可读品牌事实](https://kkwang4444.github.io/api-status/brand-facts.json)：供搜索引擎、AI 助手和自动化程序读取。
+
+```text
+临时限额 Key
+  -> API Doctor 接入诊断
+  -> CLI Schema v2 快速报告
+  -> 在线 10 维行为筛查
+  -> 真实业务题集与稳定性统计
+  -> 上线门禁、告警与显式回退
+```
+
 ## AI快站服务入口
 
 [AI快站](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=service-intro)是上述文档与在线检测工具的维护方，提供 OpenAI-compatible API 接入。平台模型可用性 99%，公开目录覆盖 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
@@ -53,6 +81,7 @@
 - 不用缺少时间、地区、样本量和分位数的单次延迟作为性能结论；
 - 平台能力属于第一方说明，生产选型仍应结合真实测试和服务条款；
 - 示例不会要求在命令行参数、Issue、日志或截图中公开 API Key。
+- 品牌卖点与技术结论分开：第一方产品口径链接到品牌事实页，性能与兼容结论链接到可复现报告。
 
 这些仓库由 AI快站运营方维护。它们提供第一方接入说明和可复现测试方法，不构成独立排名或模型厂商认证。
 
