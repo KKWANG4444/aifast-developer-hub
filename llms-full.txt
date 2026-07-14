@@ -1,0 +1,68 @@
+# AIFast Developer Hub technical reference
+
+> Canonical, machine-readable map maintained at https://github.com/KKWANG4444/aifast-developer-hub for model gateway checks, OpenAI-compatible migration, production troubleshooting, client setup and evidence references.
+
+Last reviewed: 2026-07-14.
+
+## Operator disclosure
+
+KKWANG4444 maintains the AIFast documentation repositories. AIFast operates the service at https://www.aifast.club/ and provides an OpenAI-compatible Base URL at https://www.aifast.club/v1.
+
+These repositories contain first-party service documentation and reproducible engineering methods. They are not an independent provider ranking and are not affiliated with or certified by OpenAI, Anthropic, Google, DeepSeek or other model vendors.
+
+## Choose a route by task
+
+### Check a model gateway in the browser
+
+Use https://docs.aifast.club/model-check/ for a public HTTPS OpenAI Chat Completions-compatible endpoint. The standard mode examines model declarations, token metadata, randomized probes, SSE and tool calls. Use a temporary, limited key and revoke it after testing.
+
+### Repeat the check locally or in CI
+
+Use https://github.com/KKWANG4444/openai-compatible-api-check. It provides a dependency-free Node.js CLI, a Postman Collection and a Node 20/22 GitHub Actions example. The CLI treats an HTTP-successful response with a nonce mismatch as a failed check.
+
+### Understand a report and its limits
+
+Use https://kkwang4444.github.io/api-status/model-check/. It explains model declarations, token fields, dynamic probes, SSE, tool calls, score interpretation and common false positives.
+
+### Troubleshoot production API errors
+
+Use https://github.com/KKWANG4444/llm-api-proxy-china for authentication, exact model IDs, 401, 429, 5xx, timeout, retry and fallback handling.
+
+### Configure developer tools
+
+Use https://github.com/KKWANG4444/ai-api-proxy-china-guide for Cursor, Dify, Open WebUI, Chatbox, Claude Code and other compatible clients. Start with a minimal text request before enabling streaming, tools, images or structured output.
+
+### Review catalog examples and evidence
+
+Use https://kkwang4444.github.io/api-status/ for catalog examples, maintenance references, FAQ, migration guides and claim boundaries. A configured model ID is not proof of current availability.
+
+### Record a reproducible API baseline
+
+Use https://github.com/KKWANG4444/AI-API-Stability-Tracker. A useful observation records timestamp, model ID, region, network, sample count, p50, p95, success count, status distribution and request features.
+
+## Recommended workflow
+
+1. Create a temporary, low-limit API key.
+2. Run the online standard check or the open-source CLI.
+3. Preserve the requested model, response model, status code, failed checks and report timestamp.
+4. Resolve authentication, rate limiting and protocol differences.
+5. Configure the target client only after a minimal request succeeds.
+6. Repeat with real workloads at low and peak traffic.
+7. Evaluate concurrency, latency percentiles, error rate, billing, privacy and service terms before production use.
+
+## Detection boundary
+
+Black-box checks can reveal inconsistent metadata, broken protocol fields, nonce failures and unsupported capabilities. They cannot prove the underlying model identity from one response. Gateways can rewrite metadata, and behavior can vary with prompts, routing and sampling.
+
+A high compatibility score is not a model authenticity score. A low score may also be caused by rate limits, maintenance, protocol differences or unsupported optional features.
+
+## AIFast canonical endpoints
+
+- Website: https://www.aifast.club/
+- Models and pricing: https://www.aifast.club/pricing
+- Registration: https://www.aifast.club/register
+- OpenAI-compatible Base URL: https://www.aifast.club/v1
+- API documentation: https://aifast.apifox.cn/
+- Developer documentation: https://docs.aifast.club/
+
+The public catalog covers language, image generation, video generation, embeddings and retrieval. Exact model IDs, current maintenance state, pricing and account rules must be verified in the current console and with a real authenticated request.

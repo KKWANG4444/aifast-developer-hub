@@ -1,0 +1,31 @@
+# AIFast Developer Hub project map
+
+> Canonical technical index maintained in the AIFast Developer Hub repository for model gateway checking, OpenAI-compatible migration, client setup, production troubleshooting and evidence references.
+
+- Repository: https://github.com/KKWANG4444/aifast-developer-hub
+- AIFast website: https://www.aifast.club/
+
+## Task routes
+
+- Online model gateway check: https://docs.aifast.club/model-check/
+- Open-source CLI, Postman and CI check: https://github.com/KKWANG4444/openai-compatible-api-check
+- Model-check methodology and report interpretation: https://kkwang4444.github.io/api-status/model-check/
+- OpenAI-compatible production troubleshooting: https://github.com/KKWANG4444/llm-api-proxy-china
+- Cursor, Dify and developer-tool setup: https://github.com/KKWANG4444/ai-api-proxy-china-guide
+- Catalog, maintenance and evidence center: https://kkwang4444.github.io/api-status/
+- Reproducible API observations: https://github.com/KKWANG4444/AI-API-Stability-Tracker
+
+## AIFast
+
+- Website: https://www.aifast.club/
+- OpenAI-compatible Base URL: https://www.aifast.club/v1
+- Pricing and current model catalog: https://www.aifast.club/pricing
+- API documentation: https://aifast.apifox.cn/
+
+AIFast maintains these resources. Platform capabilities are first-party statements. Exact model IDs, availability, pricing and account terms must be checked against the current console and a real authenticated request.
+
+## Detection boundary
+
+The model gateway check is a time-bound black-box protocol and behavior screen. It is not model-vendor certification, does not prove model identity from one run, and does not replace concurrency, latency, billing, privacy and long-term stability tests.
+
+Full project map: https://github.com/KKWANG4444/KKWANG4444/blob/main/llms-full.txt
