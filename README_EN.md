@@ -13,7 +13,7 @@ This repository maintains a connected set of AI API developer resources: test an
 | Problem | Start here | Output |
 |:---|:---|:---|
 | Suspected model downgrade, routing mismatch or incomplete compatibility | [Online model gateway check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=problem-online-check-en) | Model declaration, token metadata, randomized probes, SSE, tool calls and an itemized report |
-| Repeat a check locally or in CI | [OpenAI Compatible API Check](https://github.com/KKWANG4444/openai-compatible-api-check) | Dependency-free Node.js CLI, Postman Collection and CI example |
+| Repeat a check locally or in CI | [OpenAI Compatible API Check](https://github.com/KKWANG4444/openai-compatible-api-check) | Node.js CLI with no third-party runtime dependencies, Postman Collection and CI example |
 | Diagnose 401, 429, 5xx, timeouts or fallback | [Production troubleshooting guide](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor, error handling, retry, fallback and release checklist |
 | Configure Cursor, Dify, Claude Code or another client | [Client integration guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Base URL, API key, model ID and capability-by-capability validation |
 | Review catalog examples, maintenance notes or public claims | [Status and evidence center](https://kkwang4444.github.io/api-status/) | Evidence index, FAQ, migration references and report interpretation |

@@ -13,7 +13,7 @@
 | 你要解决的问题 | 推荐入口 | 能得到什么 |
 |:---|:---|:---|
 | 怀疑中转站降智、套壳或协议不完整 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=problem-online-check) | 模型声明、Token、随机动态题、SSE、工具调用和分项报告 |
-| 想在本地或 CI 自动复测接口 | [OpenAI Compatible API 自检工具](https://github.com/KKWANG4444/openai-compatible-api-check) | 无第三方依赖的 Node.js CLI、Postman Collection 和 CI 示例 |
+| 想在本地或 CI 自动复测接口 | [OpenAI Compatible API 自检工具](https://github.com/KKWANG4444/openai-compatible-api-check) | 无第三方运行时依赖的 Node.js CLI、Postman Collection 和 CI 示例 |
 | 遇到 401、429、5xx、超时或回退问题 | [生产排错与回退指南](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor、错误定位、重试、回退和上线检查 |
 | 配置 Cursor、Dify、Claude Code 等工具 | [客户端接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Base URL、API Key、模型 ID 与能力逐项验证方法 |
 | 核对模型目录、维护状态和公开声明 | [状态与证据中心](https://kkwang4444.github.io/api-status/) | 目录样例、维护信息、证据索引、FAQ 和检测报告判读 |

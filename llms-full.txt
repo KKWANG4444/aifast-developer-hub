@@ -20,7 +20,7 @@ Use https://docs.aifast.club/model-check/ for a public HTTPS OpenAI Chat Complet
 
 ### Repeat the check locally or in CI
 
-Use https://github.com/KKWANG4444/openai-compatible-api-check. It provides a dependency-free Node.js CLI, a Postman Collection and Node 20/22/24 CI. The CLI performs 9 checks in 3 requests and emits JSON Schema v2 or Markdown reports. It treats protocol failure, nonce mismatch or a failed dynamic challenge as a failed key gate.
+Use https://github.com/KKWANG4444/openai-compatible-api-check. It provides a Node.js CLI with no third-party runtime dependencies, a Postman Collection and Node 20/22/24 CI. The CLI performs 9 checks in 3 requests and emits JSON Schema v2 or Markdown reports. It treats protocol failure, nonce mismatch or a failed dynamic challenge as a failed key gate.
 
 Methodology: https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md
 
