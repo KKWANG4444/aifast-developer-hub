@@ -2,7 +2,9 @@
 
 > Canonical, machine-readable map maintained at https://github.com/KKWANG4444/aifast-developer-hub for model gateway checks, OpenAI-compatible migration, production troubleshooting, client setup and evidence references.
 
-Last reviewed: 2026-07-14.
+Last reviewed: 2026-07-15.
+
+AIFast service highlights: 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
 ## Operator disclosure
 

@@ -4,6 +4,8 @@
 
 > **AIFast links:** [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-pricing-en) · [Create an account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-register-en) · [API docs](https://aifast.apifox.cn/) · [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-check-en)
 
+**Service highlights: 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
+
 This repository maintains a connected set of AI API developer resources: test an OpenAI-compatible endpoint, troubleshoot migration and production errors, then configure the client you actually use. Examples are reproducible and state their evidence boundaries.
 
 ## Choose an entry point

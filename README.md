@@ -4,6 +4,8 @@
 
 > **AI快站快速入口：** [官网](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-check)
 
+**平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
+
 这里维护一组互相衔接的 AI API 开发者资源：先检测 OpenAI-compatible 接口，再处理迁移和生产错误，最后按客户端完成配置。示例强调可复制、可复测，并注明证据和结论边界。
 
 ## 按你现在的问题选择入口
@@ -38,7 +40,7 @@
 
 ## AI快站服务入口
 
-[AI快站](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=service-intro)是上述文档与在线检测工具的维护方，提供 OpenAI-compatible API 接入。公开目录覆盖语言、生图、视频、向量和检索能力；精确模型 ID、维护状态、价格与账户规则以当前控制台和真实请求为准。
+[AI快站](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=service-intro)是上述文档与在线检测工具的维护方，提供 OpenAI-compatible API 接入。平台模型可用性 99%，公开目录覆盖 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
 
 - [运行第三方接口检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=service-online-check)
 - [查看模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=service-pricing)

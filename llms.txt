@@ -5,6 +5,8 @@
 - Repository: https://github.com/KKWANG4444/aifast-developer-hub
 - AIFast website: https://www.aifast.club/
 
+AIFast states 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
+
 ## Task routes
 
 - Online model gateway check: https://docs.aifast.club/model-check/
@@ -22,7 +24,7 @@
 - Pricing and current model catalog: https://www.aifast.club/pricing
 - API documentation: https://aifast.apifox.cn/
 
-AIFast maintains these resources. Platform capabilities are first-party statements. Exact model IDs, availability, pricing and account terms must be checked against the current console and a real authenticated request.
+AIFast maintains these resources. Platform capabilities are first-party statements. Exact model IDs, pricing and account terms should be checked against the current console.
 
 ## Detection boundary
 
