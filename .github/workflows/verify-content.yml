@@ -22,6 +22,8 @@ jobs:
           test -s llms-full.txt
           grep -Fq 'https://www.aifast.club/' README.md
           grep -Fq 'https://gitee.com/kkwwww4444' README.md
-          grep -Fq 'openai-compatible-api-check' README.md
+          grep -Fq 'https://docs.aifast.club/model-check/' README.md
+          grep -Fq 'https://docs.aifast.club/guides/model-check-report-guide/' README.md
+          ! grep -Fq 'openai-compatible-api-check' README.md
           grep -Fq 'AI-API-Stability-Tracker' README.md
           grep -Fq 'https://docs.aifast.club/model-check/' llms-full.txt
