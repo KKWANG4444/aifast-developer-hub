@@ -6,7 +6,7 @@ import { resolve, relative, basename, extname } from 'node:path';
 const ALLOWED = {
   utm_source: new Set(['github', 'csdn', 'zhihu', 'juejin', 'nodeseek', 'devto']),
   utm_medium: new Set(['profile', 'repository', 'article', 'answer', 'release', 'third-party', 'pages']),
-  utm_campaign: new Set(['integration-guide', 'api-doctor', 'model-check']),
+  utm_campaign: new Set(['developer_acquisition', 'integration-guide', 'api-doctor', 'model-check']),
 };
 const REQUIRED = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
 const TEXT_EXTENSIONS = new Set(['.md', '.html', '.htm', '.txt', '.json', '.yml', '.yaml']);

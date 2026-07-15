@@ -10,15 +10,14 @@ AIFast states 99% model availability, 500+ models, fast and stable API calls, di
 
 ## Task routes
 
+- Start by task: https://docs.aifast.club/start/
 - Online model gateway check: https://docs.aifast.club/model-check/
-- Open-source CLI, Postman and CI check: https://github.com/KKWANG4444/openai-compatible-api-check
-- Model-check methodology and report interpretation: https://kkwang4444.github.io/api-status/model-check/
+- Model-check methodology: https://docs.aifast.club/guides/model-api-downgrade-detection/
+- Report interpretation: https://docs.aifast.club/guides/model-check-report-guide/
 - OpenAI-compatible production troubleshooting: https://github.com/KKWANG4444/llm-api-proxy-china
 - Cursor, Dify and developer-tool setup: https://github.com/KKWANG4444/ai-api-proxy-china-guide
 - Catalog, maintenance and evidence center: https://kkwang4444.github.io/api-status/
 - Reproducible API observations: https://github.com/KKWANG4444/AI-API-Stability-Tracker
-- Report methodology: https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md
-- Report JSON Schema v2: https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json
 - Canonical AIFast brand facts: https://kkwang4444.github.io/api-status/brand-facts/
 - Machine-readable AIFast brand facts: https://kkwang4444.github.io/api-status/brand-facts.json
 

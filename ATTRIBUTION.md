@@ -8,11 +8,12 @@
 |:---|:---|:---|
 | `utm_source` | `github`、`csdn`、`zhihu`、`juejin`、`nodeseek`、`devto` | `github` |
 | `utm_medium` | `profile`、`repository`、`pages`、`article`、`answer`、`release`、`third-party` | `repository` |
-| `utm_campaign` | `integration-guide`、`api-doctor`、`model-check` | `model-check` |
+| `utm_campaign` | `developer_acquisition`、`integration-guide`、`api-doctor`、`model-check` | `model-check` |
 | `utm_content` | `{资产}-{语言}-{位置}`，使用小写短横线 | `guide-cn-hero-register` |
 
-## 三个 Campaign 的边界
+## 四个 Campaign 的边界
 
+- `developer_acquisition`：`/start/` 任务分流页及首次调用、接口检测、工具迁移、企业接入等跨场景入口。
 - `integration-guide`：品牌主页、模型价格、注册、客户端配置与接入教程。
 - `api-doctor`：401、429、5xx、超时、鉴权、Base URL 与生产排错。
 - `model-check`：模型声明、Token、动态题、SSE、工具调用、降智与套壳风险筛查。

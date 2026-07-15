@@ -4,7 +4,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [AI 可读索引](llms-full.txt) · [Gitee 国内镜像](https://gitee.com/kkwwww4444)
 
-> **AI快站快速入口：** [官网](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
+> **AI快站快速入口：** [按需求开始](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
 
 **平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
 
@@ -14,6 +14,7 @@
 
 | 你要解决的问题 | 推荐入口 | 能得到什么 |
 |:---|:---|:---|
+| 不确定应从首次调用、接口检测、工具迁移还是企业接入开始 | [按当前需求开始](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start) | 对应路径、最小验证步骤和主站入口 |
 | 怀疑中转站降智、套壳或协议不完整 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check) | 模型声明、Token、随机动态题、SSE、工具调用和分项报告 |
 | 不确定检测结果如何判断 | [网站报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide) | 每个检测信号的含义、证据边界和后续处理方式 |
 | 遇到 401、429、5xx、超时或回退问题 | [生产排错与回退指南](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor、错误定位、重试、回退和上线检查 |
