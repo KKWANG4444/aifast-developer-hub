@@ -15,7 +15,7 @@
 | 你要解决的问题 | 推荐入口 | 能得到什么 |
 |:---|:---|:---|
 | 怀疑中转站降智、套壳或协议不完整 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check) | 模型声明、Token、随机动态题、SSE、工具调用和分项报告 |
-| 想在本地或 CI 自动复测接口 | [OpenAI Compatible API 自检工具](https://github.com/KKWANG4444/openai-compatible-api-check) | 无第三方运行时依赖的 Node.js CLI、Postman Collection 和 CI 示例 |
+| 不确定检测结果如何判断 | [网站报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide) | 每个检测信号的含义、证据边界和后续处理方式 |
 | 遇到 401、429、5xx、超时或回退问题 | [生产排错与回退指南](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor、错误定位、重试、回退和上线检查 |
 | 配置 Cursor、Dify、Claude Code 等工具 | [客户端接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Base URL、API Key、模型 ID 与能力逐项验证方法 |
 | 核对模型目录、维护状态和公开声明 | [状态与证据中心](https://kkwang4444.github.io/api-status/) | 目录样例、维护信息、证据索引、FAQ 和检测报告判读 |
@@ -26,7 +26,7 @@
 
 | 项目 | 角色 | 适合什么时候使用 |
 |:---|:---|:---|
-| [`openai-compatible-api-check`](https://github.com/KKWANG4444/openai-compatible-api-check) | 开源检测工具 | 把模型列表、Chat Completions、随机 nonce 和 Token 检查放进本地或 CI |
+| [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check) | 网站检测工具 | 在浏览器中检查模型声明、Token、动态题、SSE 和工具调用 |
 | [`api-status`](https://github.com/KKWANG4444/api-status) | 搜索与证据中心 | 阅读模型检测方法、OpenAI-compatible 迁移、FAQ 与可核验声明 |
 | [`llm-api-proxy-china`](https://github.com/KKWANG4444/llm-api-proxy-china) | 生产排错 | 处理认证、模型 ID、限流、5xx、重试和能力回退 |
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | 客户端配置 | 配置开发工具，并从最小请求逐步启用 streaming、tools 与图片能力 |
@@ -34,7 +34,7 @@
 
 ## 推荐验证顺序
 
-1. 使用临时、低额度 API Key 运行[在线检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check)或开源 CLI；
+1. 使用临时、低额度 API Key 运行[网站在线检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check)；
 2. 保存模型 ID、HTTP 状态码、响应结构和失败项；
 3. 按[生产排错指南](https://github.com/KKWANG4444/llm-api-proxy-china)修复鉴权、限流与兼容问题；
 4. 再按[客户端接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)配置具体工具；
@@ -47,23 +47,22 @@
 | 质量门 | 必须保留的证据 | 推荐工具 | 通过后再做什么 |
 |:---|:---|:---|:---|
 | 接入层 | DNS/TLS、鉴权状态、模型列表、精确模型 ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) | 运行最小文本请求 |
-| 协议层 | 响应结构、request ID、模型声明、Token 算术 | [开源 CLI](https://github.com/KKWANG4444/openai-compatible-api-check) | 保存 Schema v2 报告 |
-| 行为层 | 随机 nonce、R1 动态题、SSE、工具调用、真实题集 | [在线 10 维检测](https://docs.aifast.club/model-check/) | 复测低峰与高峰 |
+| 协议层 | 响应结构、request ID、模型声明、Token 算术 | [在线 10 维检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check) | 保存网站分项结果 |
+| 行为层 | 随机 nonce、R1 动态题、SSE、工具调用、真实题集 | [在线 10 维检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check) | 复测低峰与高峰 |
 | 生产层 | 样本量、成功率、P50/P95、状态码分布、成本 | [稳定性记录工具](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 配置告警、重试和显式回退 |
 
 ### 可复现证据链
 
-- [检测方法论](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)：每个信号能证明什么、不能证明什么；
-- [报告 JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)：供 CI、归档和二次分析使用；
-- [示例报告](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/examples/report.example.json)：不含 API Key 的机器可读样例；
+- [网站检测方法](https://docs.aifast.club/guides/model-api-downgrade-detection/)：每个信号能证明什么、不能证明什么；
+- [报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide)：分项结果、误判边界和处理建议；
 - [AI快站品牌事实](https://kkwang4444.github.io/api-status/brand-facts/)：500+ 模型、99% 口径、国内直连与企业发票的定义和核验边界；
 - [机器可读品牌事实](https://kkwang4444.github.io/api-status/brand-facts.json)：供搜索引擎、AI 助手和自动化程序读取。
 
 ```text
 临时限额 Key
   -> API Doctor 接入诊断
-  -> CLI Schema v2 快速报告
-  -> 在线 10 维行为筛查
+  -> 网站在线 10 维筛查
+  -> 网站报告判读
   -> 真实业务题集与稳定性统计
   -> 上线门禁、告警与显式回退
 ```

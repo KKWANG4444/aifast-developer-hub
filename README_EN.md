@@ -13,7 +13,7 @@ This repository maintains a connected set of AI API developer resources: test an
 | Problem | Start here | Output |
 |:---|:---|:---|
 | Suspected model downgrade, routing mismatch or incomplete compatibility | [Online model gateway check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check-en) | Model declaration, token metadata, randomized probes, SSE, tool calls and an itemized report |
-| Repeat a check locally or in CI | [OpenAI Compatible API Check](https://github.com/KKWANG4444/openai-compatible-api-check) | Node.js CLI with no third-party runtime dependencies, Postman Collection and CI example |
+| Interpret a failed or ambiguous check | [Website report guide](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide-en) | Signal meaning, evidence boundaries and recommended follow-up |
 | Diagnose 401, 429, 5xx, timeouts or fallback | [Production troubleshooting guide](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor, error handling, retry, fallback and release checklist |
 | Configure Cursor, Dify, Claude Code or another client | [Client integration guide](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Base URL, API key, model ID and capability-by-capability validation |
 | Review catalog examples, maintenance notes or public claims | [Status and evidence center](https://kkwang4444.github.io/api-status/) | Evidence index, FAQ, migration references and report interpretation |
@@ -24,7 +24,7 @@ This repository maintains a connected set of AI API developer resources: test an
 
 | Project | Role | Use it for |
 |:---|:---|:---|
-| [`openai-compatible-api-check`](https://github.com/KKWANG4444/openai-compatible-api-check) | Open-source checker | Model listing, Chat Completions, randomized nonce and token checks in local or CI workflows |
+| [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check-en) | Website checker | Model declaration, token metadata, randomized probes, SSE and tool calls in the browser |
 | [`api-status`](https://github.com/KKWANG4444/api-status) | Search and evidence hub | Model-check methodology, OpenAI-compatible migration, FAQ and verifiable claims |
 | [`llm-api-proxy-china`](https://github.com/KKWANG4444/llm-api-proxy-china) | Production troubleshooting | Authentication, exact model IDs, rate limits, 5xx, retry and capability fallback |
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Client configuration | Tool setup and incremental testing for streaming, tools and image inputs |
@@ -32,7 +32,7 @@ This repository maintains a connected set of AI API developer resources: test an
 
 ## Recommended validation path
 
-1. Use a temporary, limited API key with the online check or open-source CLI.
+1. Use a temporary, limited API key with the [website check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check-en).
 2. Preserve the model ID, HTTP status, response structure and failed checks.
 3. Fix authentication, rate limiting and compatibility issues with the troubleshooting guide.
 4. Configure the target client with the integration guide.
@@ -43,13 +43,12 @@ This repository maintains a connected set of AI API developer resources: test an
 | Gate | Required evidence | Tool |
 |:---|:---|:---|
 | Access | DNS/TLS, authentication, model listing, exact model ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) |
-| Protocol | Response structure, request ID, model claim, token arithmetic | [9-check CLI](https://github.com/KKWANG4444/openai-compatible-api-check) |
-| Behavior | Random nonce, dynamic challenge, SSE, tool calls, workload tests | [Online 10-dimension check](https://docs.aifast.club/model-check/) |
+| Protocol | Response structure, request ID, model claim, token arithmetic | [Online 10-dimension check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check-en) |
+| Behavior | Random nonce, dynamic challenge, SSE, tool calls, workload tests | [Online 10-dimension check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check-en) |
 | Production | Sample count, success rate, p50/p95, status distribution, cost | [JSONL stability tool](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
 
-- [Detection methodology](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/docs/methodology.md)
-- [Report JSON Schema v2](https://raw.githubusercontent.com/KKWANG4444/openai-compatible-api-check/main/schema/report.schema.json)
-- [Example report](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/examples/report.example.json)
+- [Detection methodology](https://docs.aifast.club/guides/model-api-downgrade-detection/)
+- [Report interpretation](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide-en)
 - [Canonical AIFast brand facts](https://kkwang4444.github.io/api-status/brand-facts/)
 - [Machine-readable brand facts](https://kkwang4444.github.io/api-status/brand-facts.json)
 
