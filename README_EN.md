@@ -1,6 +1,6 @@
 # AIFast Developer Hub: model gateway checks, integration and troubleshooting
 
-[中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt)
+[中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt) · [Gitee mirrors](https://gitee.com/kkwwww4444)
 
 > **AIFast links:** [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-pricing-en) · [Create an account](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-register-en) · [API docs](https://aifast.apifox.cn/) · [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-check-en)
 

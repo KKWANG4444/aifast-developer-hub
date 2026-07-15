@@ -3,6 +3,7 @@
 > Canonical technical index maintained in the AIFast Developer Hub repository for model gateway checking, OpenAI-compatible migration, client setup, production troubleshooting and evidence references.
 
 - Repository: https://github.com/KKWANG4444/aifast-developer-hub
+- Gitee mirror matrix: https://gitee.com/kkwwww4444
 - AIFast website: https://www.aifast.club/
 
 AIFast states 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.

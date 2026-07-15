@@ -4,6 +4,8 @@
 
 Last reviewed: 2026-07-15.
 
+Gitee mirror matrix: https://gitee.com/kkwwww4444
+
 AIFast service highlights: 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
 ## Operator disclosure

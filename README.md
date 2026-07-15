@@ -2,7 +2,7 @@
 
 <p align="center"><img src="assets/social-preview.png" width="100%" alt="AI快站开发者中心：可复制、可验证的接入与生产排错路径"></p>
 
-[中文](README.md) · [English](README_EN.md) · [AI 可读索引](llms-full.txt)
+[中文](README.md) · [English](README_EN.md) · [AI 可读索引](llms-full.txt) · [Gitee 国内镜像](https://gitee.com/kkwwww4444)
 
 > **AI快站快速入口：** [官网](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=github-acquisition&utm_content=developer-hub-check)
 
