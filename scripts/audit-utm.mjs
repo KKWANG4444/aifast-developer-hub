@@ -46,6 +46,16 @@ function inspectUrl(raw, file, line) {
     errors.push(`${line}: 注册入口缺少指定 channel：${cleaned}`);
   }
 
+  if (url.hostname === 'docs.aifast.club' && url.pathname === '/go/register/') {
+    if (url.searchParams.get('source') !== 'github') {
+      errors.push(`${line}: GitHub 注册跳转缺少 source=github：${cleaned}`);
+    }
+    const placement = url.searchParams.get('placement') || '';
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(placement)) {
+      errors.push(`${line}: GitHub 注册跳转 placement 无效：${cleaned}`);
+    }
+  }
+
   const utmKeys = [...url.searchParams.keys()].filter((key) => key.startsWith('utm_'));
   if (utmKeys.length === 0) return errors;
 

@@ -2,7 +2,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt) · [Gitee mirrors](https://gitee.com/kkwwww4444)
 
-> **AIFast links:** [Start by task](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Create an account](https://www.aifast.club/register?channel=c_uoqg7aoy&utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-register-en) · [API docs](https://aifast.apifox.cn/) · [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
+> **AIFast links:** [Start by task](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Create an account](https://docs.aifast.club/go/register/?source=github&placement=developer-hub-register-en) · [API docs](https://aifast.apifox.cn/) · [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
 
 **Service highlights: 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
 
@@ -63,7 +63,7 @@ This repository maintains a connected set of AI API developer resources: test an
 
 - [Run a gateway check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check-en)
 - [View models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing-en)
-- [Create an account](https://www.aifast.club/register?channel=c_uoqg7aoy&utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-register-en)
+- [Create an account](https://docs.aifast.club/go/register/?source=github&placement=developer-hub-service-register-en)
 - [Read the API documentation](https://aifast.apifox.cn/)
 
 ## Maintenance rules
