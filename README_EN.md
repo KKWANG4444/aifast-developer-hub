@@ -13,6 +13,8 @@ This repository maintains a connected set of AI API developer resources: test an
 | Problem | Start here | Output |
 |:---|:---|:---|
 | Unsure whether to make a first call, test an endpoint, migrate a client or prepare enterprise adoption | [Start from the matching workflow](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start-en) | A task-specific path, minimum validation and service entry point |
+| Base URL produces `/v1/v1`, 404s or duplicated endpoints | [Base URL checker](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-base-url-en) | Recommended Base URL and final models, Chat and Responses paths |
+| Estimate batch-call and retry cost | [Token cost calculator](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-cost-en) | Per-task, batch, retry and total cost breakdown |
 | Suspected model downgrade, routing mismatch or incomplete compatibility | [Online model gateway check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check-en) | Model declaration, token metadata, randomized probes, SSE, tool calls and an itemized report |
 | Interpret a failed or ambiguous check | [Website report guide](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide-en) | Signal meaning, evidence boundaries and recommended follow-up |
 | Diagnose 401, 429, 5xx, timeouts or fallback | [Production troubleshooting guide](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor, error handling, retry, fallback and release checklist |
@@ -26,6 +28,8 @@ This repository maintains a connected set of AI API developer resources: test an
 | Project | Role | Use it for |
 |:---|:---|:---|
 | [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check-en) | Website checker | Model declaration, token metadata, randomized probes, SSE and tool calls in the browser |
+| [Base URL checker](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker-en) | Configuration checker | Duplicated version paths, complete endpoint mistakes and client path appending |
+| [Token cost calculator](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator-en) | Cost estimator | Current input, output, task-volume and retry cost calculations |
 | [`api-status`](https://github.com/KKWANG4444/api-status) | Search and evidence hub | Model-check methodology, OpenAI-compatible migration, FAQ and verifiable claims |
 | [`llm-api-proxy-china`](https://github.com/KKWANG4444/llm-api-proxy-china) | Production troubleshooting | Authentication, exact model IDs, rate limits, 5xx, retry and capability fallback |
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Client configuration | Tool setup and incremental testing for streaming, tools and image inputs |

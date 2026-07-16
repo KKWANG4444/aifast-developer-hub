@@ -15,6 +15,8 @@
 | 你要解决的问题 | 推荐入口 | 能得到什么 |
 |:---|:---|:---|
 | 不确定应从首次调用、接口检测、工具迁移还是企业接入开始 | [按当前需求开始](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start) | 对应路径、最小验证步骤和主站入口 |
+| Base URL 出现 `/v1/v1`、404 或完整端点重复 | [Base URL 检查器](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-base-url) | 建议 Base URL 与 models、Chat、Responses 最终路径 |
+| 需要估算批量调用和失败重试成本 | [Token 成本计算器](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-cost) | 单次、批量、重试与总成本拆分 |
 | 怀疑中转站降智、套壳或协议不完整 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check) | 模型声明、Token、随机动态题、SSE、工具调用和分项报告 |
 | 不确定检测结果如何判断 | [网站报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide) | 每个检测信号的含义、证据边界和后续处理方式 |
 | 遇到 401、429、5xx、超时或回退问题 | [生产排错与回退指南](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor、错误定位、重试、回退和上线检查 |
@@ -28,6 +30,8 @@
 | 项目 | 角色 | 适合什么时候使用 |
 |:---|:---|:---|
 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check) | 网站检测工具 | 在浏览器中检查模型声明、Token、动态题、SSE 和工具调用 |
+| [Base URL 检查器](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker) | 配置排错工具 | 识别重复版本路径、完整端点误填和客户端自动拼接 |
+| [Token 成本计算器](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator) | 成本估算工具 | 使用当前价格计算输入、输出、任务数量和重试成本 |
 | [`api-status`](https://github.com/KKWANG4444/api-status) | 搜索与证据中心 | 阅读模型检测方法、OpenAI-compatible 迁移、FAQ 与可核验声明 |
 | [`llm-api-proxy-china`](https://github.com/KKWANG4444/llm-api-proxy-china) | 生产排错 | 处理认证、模型 ID、限流、5xx、重试和能力回退 |
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | 客户端配置 | 配置开发工具，并从最小请求逐步启用 streaming、tools 与图片能力 |
