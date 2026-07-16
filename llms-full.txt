@@ -73,7 +73,7 @@ A high compatibility score is not a model authenticity score. A low score may al
 
 - Website: https://www.aifast.club/
 - Models and pricing: https://www.aifast.club/pricing
-- Registration: https://www.aifast.club/register
+- Registration: https://www.aifast.club/register?channel=c_uoqg7aoy
 - OpenAI-compatible Base URL: https://www.aifast.club/v1
 - API documentation: https://aifast.apifox.cn/
 - Developer documentation: https://docs.aifast.club/

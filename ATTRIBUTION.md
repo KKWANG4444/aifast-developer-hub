@@ -29,7 +29,7 @@
 ## 示例
 
 ```text
-https://www.aifast.club/register?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=guide-cn-hero-register
+https://www.aifast.club/register?channel=c_uoqg7aoy&utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=guide-cn-hero-register
 ```
 
 新增公开链接时必须填写 `utm_content`，同一位置不得在不同仓库复用相同值。

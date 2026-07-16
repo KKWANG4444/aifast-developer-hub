@@ -13,6 +13,7 @@ const TEXT_EXTENSIONS = new Set(['.md', '.html', '.htm', '.txt', '.json', '.yml'
 const SKIP_DIRECTORIES = new Set(['.git', 'node_modules', '_site', 'dist', 'coverage']);
 const MACHINE_READABLE = new Set(['llms.txt', 'llms-full.txt', 'brand-facts.json']);
 const URL_PATTERN = /https?:\/\/[^\s<>'"`)\]]+/g;
+const EXPECTED_REGISTER_CHANNEL = 'c_uoqg7aoy';
 
 async function collectFiles(path) {
   const entries = await readdir(path, { withFileTypes: true });
@@ -38,6 +39,11 @@ function inspectUrl(raw, file, line) {
     url = new URL(cleaned);
   } catch {
     return errors;
+  }
+
+  if (url.hostname === 'www.aifast.club' && url.pathname === '/register'
+    && url.searchParams.get('channel') !== EXPECTED_REGISTER_CHANNEL) {
+    errors.push(`${line}: 注册入口缺少指定 channel：${cleaned}`);
   }
 
   const utmKeys = [...url.searchParams.keys()].filter((key) => key.startsWith('utm_'));
