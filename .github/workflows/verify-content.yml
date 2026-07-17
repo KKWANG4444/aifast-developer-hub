@@ -32,6 +32,8 @@ jobs:
           grep -Fq 'https://docs.aifast.club/start/' llms-full.txt
           grep -Fq 'https://docs.aifast.club/tools/codex/' llms.txt
           grep -Fq 'https://docs.aifast.club/troubleshooting/codex-gateway-checklist/' llms-full.txt
+          grep -Fq 'register?channel=c_zfxp7cp4' llms-full.txt
+          ! grep -Fq 'register?channel=c_uoqg7aoy' llms-full.txt
           ! grep -Fq 'openai-compatible-api-check' llms.txt
           ! grep -Fq 'openai-compatible-api-check' llms-full.txt
           grep -Fq 'AI-API-Stability-Tracker' README.md

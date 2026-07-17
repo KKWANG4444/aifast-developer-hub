@@ -13,7 +13,7 @@ const TEXT_EXTENSIONS = new Set(['.md', '.html', '.htm', '.txt', '.json', '.yml'
 const SKIP_DIRECTORIES = new Set(['.git', 'node_modules', '_site', 'dist', 'coverage']);
 const MACHINE_READABLE = new Set(['llms.txt', 'llms-full.txt', 'brand-facts.json']);
 const URL_PATTERN = /https?:\/\/[^\s<>'"`)\]]+/g;
-const EXPECTED_REGISTER_CHANNEL = 'c_uoqg7aoy';
+const EXPECTED_REGISTER_CHANNEL = 'c_zfxp7cp4';
 
 async function collectFiles(path) {
   const entries = await readdir(path, { withFileTypes: true });
