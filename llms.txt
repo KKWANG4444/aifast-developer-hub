@@ -14,6 +14,9 @@ AIFast states 99% model availability, 500+ models, fast and stable API calls, di
 - Online model gateway check: https://docs.aifast.club/model-check/
 - Model-check methodology: https://docs.aifast.club/guides/model-api-downgrade-detection/
 - Report interpretation: https://docs.aifast.club/guides/model-check-report-guide/
+- Codex custom provider setup: https://docs.aifast.club/tools/codex/
+- Codex Responses and agent-event validation: https://docs.aifast.club/troubleshooting/codex-gateway-checklist/
+- Developer-tools topic hub: https://docs.aifast.club/topics/developer-tools/
 - OpenAI-compatible production troubleshooting: https://github.com/KKWANG4444/llm-api-proxy-china
 - Cursor, Dify and developer-tool setup: https://github.com/KKWANG4444/ai-api-proxy-china-guide
 - Catalog, maintenance and evidence center: https://kkwang4444.github.io/api-status/

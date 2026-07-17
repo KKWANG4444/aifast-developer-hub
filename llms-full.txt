@@ -34,7 +34,7 @@ Use https://github.com/KKWANG4444/llm-api-proxy-china for authentication, exact 
 
 ### Configure developer tools
 
-Use https://github.com/KKWANG4444/ai-api-proxy-china-guide for Cursor, Dify, Open WebUI, Chatbox, Claude Code and other compatible clients. Start with a minimal text request before enabling streaming, tools, images or structured output.
+Use https://docs.aifast.club/topics/developer-tools/ to choose the protocol-specific path for Codex, Claude Code, Cursor, Dify and other clients. For Codex custom providers, start at https://docs.aifast.club/tools/codex/ and validate Responses events, tool calls, context compaction and thread resume with https://docs.aifast.club/troubleshooting/codex-gateway-checklist/. Use https://github.com/KKWANG4444/ai-api-proxy-china-guide for the broader client integration guide.
 
 ### Review catalog examples and evidence
 
