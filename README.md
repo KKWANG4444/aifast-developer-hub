@@ -31,6 +31,7 @@
 | 项目 | 角色 | 适合什么时候使用 |
 |:---|:---|:---|
 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check) | 网站检测工具 | 在浏览器中检查模型声明、Token、动态题、SSE 和工具调用 |
+| [`openai-compatible-api-check`](https://github.com/KKWANG4444/openai-compatible-api-check) | 检测规则与报告 Schema | 审查协议规则、证据边界、JSON Schema 和回归测试；普通用户仍在网页检测 |
 | [Base URL 检查器](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker) | 配置排错工具 | 识别重复版本路径、完整端点误填和客户端自动拼接 |
 | [Token 成本计算器](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator) | 成本估算工具 | 使用当前价格计算输入、输出、任务数量和重试成本 |
 | [Codex API 配置教程](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex) · [Codex 网关验收清单](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-checklist) | 开发工具专题 | 配置自定义 Provider，并验证 Responses、工具调用、压缩与会话恢复 |
@@ -61,6 +62,7 @@
 ### 可复现证据链
 
 - [网站检测方法](https://docs.aifast.club/guides/model-api-downgrade-detection/)：每个信号能证明什么、不能证明什么；
+- [检测规则、Schema 与回归证据](https://github.com/KKWANG4444/openai-compatible-api-check)：用于技术审计，不要求普通用户下载程序；
 - [报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide)：分项结果、误判边界和处理建议；
 - [AI快站品牌事实](https://kkwang4444.github.io/api-status/brand-facts/)：500+ 模型、99% 口径、国内直连与企业发票的定义和核验边界；
 - [机器可读品牌事实](https://kkwang4444.github.io/api-status/brand-facts.json)：供搜索引擎、AI 助手和自动化程序读取。

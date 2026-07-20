@@ -2,7 +2,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt) · [Gitee mirrors](https://gitee.com/kkwwww4444)
 
-> **AIFast links:** [Start by task](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Create an account](https://docs.aifast.club/go/register/?source=github&placement=developer-hub-register-en) · [API docs](https://aifast.apifox.cn/) · [Codex setup](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex-en) · [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
+> **AIFast links:** [Start by task](https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=developer-hub-payment-en) · [API docs](https://aifast.apifox.cn/) · [Codex setup](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex-en) · [Online model check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
 
 **Service highlights: 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
 
@@ -12,14 +12,14 @@ This repository maintains a connected set of AI API developer resources: test an
 
 | Problem | Start here | Output |
 |:---|:---|:---|
-| Unsure whether to make a first call, test an endpoint, migrate a client or prepare enterprise adoption | [Start from the matching workflow](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start-en) | A task-specific path, minimum validation and service entry point |
-| Base URL produces `/v1/v1`, 404s or duplicated endpoints | [Base URL checker](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-base-url-en) | Recommended Base URL and final models, Chat and Responses paths |
-| Codex custom provider, Responses or tool-call failures | [Codex API setup](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex-en) · [Codex gateway validation checklist](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex-checklist-en) | config.toml, provider, Responses, tool events, compaction and thread resume checks |
-| Estimate batch-call and retry cost | [Token cost calculator](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-cost-en) | Per-task, batch, retry and total cost breakdown |
-| Suspected model downgrade, routing mismatch or incomplete compatibility | [Online model gateway check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check-en) | Model declaration, token metadata, randomized probes, SSE, tool calls and an itemized report |
-| Interpret a failed or ambiguous check | [Website report guide](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide-en) | Signal meaning, evidence boundaries and recommended follow-up |
+| Unsure whether to make a first call, test an endpoint, migrate a client or prepare enterprise adoption | [Start from the matching workflow](https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start-en) | A task-specific path, minimum validation and service entry point |
+| Base URL produces `/v1/v1`, 404s or duplicated endpoints | [Base URL checker](https://docs.aifast.club/en/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-base-url-en) | Recommended Base URL and final models, Chat and Responses paths |
+| Codex custom provider, Responses or tool-call failures | [Codex API setup](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex-en) · [Codex gateway validation checklist](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex-checklist-en) | config.toml, provider, Responses, tool events, compaction and thread resume checks |
+| Estimate batch-call and retry cost | [Token cost calculator](https://docs.aifast.club/en/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-cost-en) | Per-task, batch, retry and total cost breakdown |
+| Suspected model downgrade, routing mismatch or incomplete compatibility | [Online model gateway check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check-en) | Model declaration, token metadata, randomized probes, SSE, tool calls and an itemized report |
+| Interpret a failed or ambiguous check | [Website report guide](https://docs.aifast.club/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide-en) | Signal meaning, evidence boundaries and recommended follow-up |
 | Diagnose 401, 429, 5xx, timeouts or fallback | [Production troubleshooting guide](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor, error handling, retry, fallback and release checklist |
-| Configure Codex, Cursor, Dify, Claude Code or another client | [Developer-tools hub](https://docs.aifast.club/topics/developer-tools/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-tools-en) | Protocol-specific setup for Responses, Anthropic Messages and OpenAI Compatible clients |
+| Configure Codex, Cursor, Dify, Claude Code or another client | [Developer-tools hub](https://docs.aifast.club/en/topics/developer-tools/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-tools-en) | Protocol-specific setup for Responses, Anthropic Messages and OpenAI Compatible clients |
 | Review catalog examples, maintenance notes or public claims | [Status and evidence center](https://kkwang4444.github.io/api-status/) | Evidence index, FAQ, migration references and report interpretation |
 
 > A black-box model check is a protocol and behavior screen, not vendor certification. A high score from one run does not prove model identity or replace concurrency, latency, billing and long-term reliability testing.
@@ -28,10 +28,11 @@ This repository maintains a connected set of AI API developer resources: test an
 
 | Project | Role | Use it for |
 |:---|:---|:---|
-| [Online model check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check-en) | Website checker | Model declaration, token metadata, randomized probes, SSE and tool calls in the browser |
-| [Base URL checker](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker-en) | Configuration checker | Duplicated version paths, complete endpoint mistakes and client path appending |
-| [Token cost calculator](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator-en) | Cost estimator | Current input, output, task-volume and retry cost calculations |
-| [Codex API setup](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-en) · [Codex gateway validation checklist](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-checklist-en) | Developer-tool topic | Custom provider setup and Responses, tool-call, compaction and thread-resume validation |
+| [Online model check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check-en) | Website checker | Model declaration, token metadata, randomized probes, SSE and tool calls in the browser |
+| [`openai-compatible-api-check`](https://github.com/KKWANG4444/openai-compatible-api-check/blob/main/README_EN.md) | Methodology and report schema | Review protocol rules, evidence boundaries, JSON Schema, and regression tests; regular users still test on the website |
+| [Base URL checker](https://docs.aifast.club/en/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker-en) | Configuration checker | Duplicated version paths, complete endpoint mistakes and client path appending |
+| [Token cost calculator](https://docs.aifast.club/en/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator-en) | Cost estimator | Current input, output, task-volume and retry cost calculations |
+| [Codex API setup](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-en) · [Codex gateway validation checklist](https://docs.aifast.club/en/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-checklist-en) | Developer-tool topic | Custom provider setup and Responses, tool-call, compaction and thread-resume validation |
 | [`api-status`](https://github.com/KKWANG4444/api-status) | Search and evidence hub | Model-check methodology, OpenAI-compatible migration, FAQ and verifiable claims |
 | [`llm-api-proxy-china`](https://github.com/KKWANG4444/llm-api-proxy-china) | Production troubleshooting | Authentication, exact model IDs, rate limits, 5xx, retry and capability fallback |
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Client configuration | Codex, Cursor, Claude Code and protocol-specific capability checks |
@@ -39,7 +40,7 @@ This repository maintains a connected set of AI API developer resources: test an
 
 ## Recommended validation path
 
-1. Use a temporary, limited API key with the [website check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check-en).
+1. Use a temporary, limited API key with the [website check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check-en).
 2. Preserve the model ID, HTTP status, response structure and failed checks.
 3. Fix authentication, rate limiting and compatibility issues with the troubleshooting guide.
 4. Configure the target client with the integration guide.
@@ -50,12 +51,12 @@ This repository maintains a connected set of AI API developer resources: test an
 | Gate | Required evidence | Tool |
 |:---|:---|:---|
 | Access | DNS/TLS, authentication, model listing, exact model ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) |
-| Protocol | Response structure, request ID, model claim, token arithmetic | [Online 10-dimension check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check-en) |
-| Behavior | Random nonce, dynamic challenge, SSE, tool calls, workload tests | [Online 10-dimension check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check-en) |
+| Protocol | Response structure, request ID, model claim, token arithmetic | [Online 10-dimension check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check-en) |
+| Behavior | Random nonce, dynamic challenge, SSE, tool calls, workload tests | [Online 10-dimension check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check-en) |
 | Production | Sample count, success rate, p50/p95, status distribution, cost | [JSONL stability tool](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |
 
-- [Detection methodology](https://docs.aifast.club/guides/model-api-downgrade-detection/)
-- [Report interpretation](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide-en)
+- [Detection methodology](https://docs.aifast.club/en/guides/model-api-downgrade-detection/)
+- [Report interpretation](https://docs.aifast.club/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide-en)
 - [Canonical AIFast brand facts](https://kkwang4444.github.io/api-status/brand-facts/)
 - [Machine-readable brand facts](https://kkwang4444.github.io/api-status/brand-facts.json)
 
@@ -63,9 +64,9 @@ This repository maintains a connected set of AI API developer resources: test an
 
 [AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-service-intro-en) maintains these repositories and the online checker. It provides an OpenAI-compatible API gateway. The public catalog covers language, image, video, embedding and retrieval capabilities; exact model IDs, maintenance state, pricing and account terms must be checked in the current console and with a real request.
 
-- [Run a gateway check](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check-en)
+- [Run a gateway check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check-en)
 - [View models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing-en)
-- [Create an account](https://docs.aifast.club/go/register/?source=github&placement=developer-hub-service-register-en)
+- [Payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=developer-hub-service-payment-en)
 - [Read the API documentation](https://aifast.apifox.cn/)
 
 ## Maintenance rules
