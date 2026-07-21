@@ -10,7 +10,7 @@ const ALLOWED = {
 };
 const REQUIRED = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
 const TEXT_EXTENSIONS = new Set(['.md', '.html', '.htm', '.txt', '.json', '.yml', '.yaml']);
-const SKIP_DIRECTORIES = new Set(['.git', 'node_modules', '_site', 'dist', 'coverage']);
+const SKIP_DIRECTORIES = new Set(['.git', '.github', 'scripts', 'node_modules', '_site', 'dist', 'coverage']);
 const MACHINE_READABLE = new Set(['llms.txt', 'llms-full.txt', 'brand-facts.json']);
 const URL_PATTERN = /https?:\/\/[^\s<>'"`)\]]+/g;
 const EXPECTED_REGISTER_CHANNEL = 'c_zfxp7cp4';
