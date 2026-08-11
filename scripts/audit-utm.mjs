@@ -46,7 +46,7 @@ function inspectUrl(raw, file, line) {
     errors.push(`${line}: 注册入口缺少指定 channel：${cleaned}`);
   }
 
-  if (url.hostname === 'docs.aifast.club' && url.pathname === '/go/register/') {
+  if (url.hostname === 'docs.aifast.hk' && url.pathname === '/go/register/') {
     if (url.searchParams.get('source') !== 'github') {
       errors.push(`${line}: GitHub 注册跳转缺少 source=github：${cleaned}`);
     }

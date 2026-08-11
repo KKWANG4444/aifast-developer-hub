@@ -4,7 +4,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [AI 可读索引](llms-full.txt) · [Gitee 国内镜像](https://gitee.com/kkwwww4444)
 
-> **AI快站快速入口：** [按需求开始](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://docs.aifast.club/go/register/?source=github&placement=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [Codex 配置](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
+> **AI快站快速入口：** [按需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [Codex 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
 
 **平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
 
@@ -14,14 +14,14 @@
 
 | 你要解决的问题 | 推荐入口 | 能得到什么 |
 |:---|:---|:---|
-| 不确定应从首次调用、接口检测、工具迁移还是企业接入开始 | [按当前需求开始](https://docs.aifast.club/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start) | 对应路径、最小验证步骤和主站入口 |
-| Base URL 出现 `/v1/v1`、404 或完整端点重复 | [Base URL 检查器](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-base-url) | 建议 Base URL 与 models、Chat、Responses 最终路径 |
-| Codex 自定义 Provider、Responses 或工具调用异常 | [Codex API 配置教程](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex) · [Codex 网关验收清单](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex-checklist) | config.toml、Provider、Responses、工具事件、压缩与会话恢复检查 |
-| 需要估算批量调用和失败重试成本 | [Token 成本计算器](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-cost) | 单次、批量、重试与总成本拆分 |
-| 怀疑中转站降智、套壳或协议不完整 | [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check) | 模型声明、Token、随机动态题、SSE、工具调用和分项报告 |
-| 不确定检测结果如何判断 | [网站报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide) | 每个检测信号的含义、证据边界和后续处理方式 |
+| 不确定应从首次调用、接口检测、工具迁移还是企业接入开始 | [按当前需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-start) | 对应路径、最小验证步骤和主站入口 |
+| Base URL 出现 `/v1/v1`、404 或完整端点重复 | [Base URL 检查器](https://docs.aifast.hk/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-base-url) | 建议 Base URL 与 models、Chat、Responses 最终路径 |
+| Codex 自定义 Provider、Responses 或工具调用异常 | [Codex API 配置教程](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex) · [Codex 网关验收清单](https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-codex-checklist) | config.toml、Provider、Responses、工具事件、压缩与会话恢复检查 |
+| 需要估算批量调用和失败重试成本 | [Token 成本计算器](https://docs.aifast.hk/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-cost) | 单次、批量、重试与总成本拆分 |
+| 怀疑中转站降智、套壳或协议不完整 | [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-online-check) | 模型声明、Token、随机动态题、SSE、工具调用和分项报告 |
+| 不确定检测结果如何判断 | [网站报告判读教程](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide) | 每个检测信号的含义、证据边界和后续处理方式 |
 | 遇到 401、429、5xx、超时或回退问题 | [生产排错与回退指南](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor、错误定位、重试、回退和上线检查 |
-| 配置 Codex、Cursor、Dify、Claude Code 等工具 | [开发工具接入中心](https://docs.aifast.club/topics/developer-tools/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-tools) | 按 Responses、Anthropic Messages 与 OpenAI Compatible 协议分别配置 |
+| 配置 Codex、Cursor、Dify、Claude Code 等工具 | [开发工具接入中心](https://docs.aifast.hk/topics/developer-tools/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-tools) | 按 Responses、Anthropic Messages 与 OpenAI Compatible 协议分别配置 |
 | 核对模型目录、维护状态和公开声明 | [状态与证据中心](https://kkwang4444.github.io/api-status/) | 目录样例、维护信息、证据索引、FAQ 和检测报告判读 |
 
 > 模型检测是黑盒协议与行为筛查，不是模型厂商认证。单轮高分不能证明底层模型身份，也不能代替并发、延迟、账单和长期稳定性测试。
@@ -30,11 +30,11 @@
 
 | 项目 | 角色 | 适合什么时候使用 |
 |:---|:---|:---|
-| [在线模型检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check) | 网站检测工具 | 在浏览器中检查模型声明、Token、动态题、SSE 和工具调用 |
+| [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=matrix-online-check) | 网站检测工具 | 在浏览器中检查模型声明、Token、动态题、SSE 和工具调用 |
 | [`openai-compatible-api-check`](https://github.com/KKWANG4444/openai-compatible-api-check) | 检测规则与报告 Schema | 审查协议规则、证据边界、JSON Schema 和回归测试；普通用户仍在网页检测 |
-| [Base URL 检查器](https://docs.aifast.club/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker) | 配置排错工具 | 识别重复版本路径、完整端点误填和客户端自动拼接 |
-| [Token 成本计算器](https://docs.aifast.club/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator) | 成本估算工具 | 使用当前价格计算输入、输出、任务数量和重试成本 |
-| [Codex API 配置教程](https://docs.aifast.club/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex) · [Codex 网关验收清单](https://docs.aifast.club/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-checklist) | 开发工具专题 | 配置自定义 Provider，并验证 Responses、工具调用、压缩与会话恢复 |
+| [Base URL 检查器](https://docs.aifast.hk/tools/base-url-checker/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-base-url-checker) | 配置排错工具 | 识别重复版本路径、完整端点误填和客户端自动拼接 |
+| [Token 成本计算器](https://docs.aifast.hk/tools/api-cost-calculator/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=matrix-api-cost-calculator) | 成本估算工具 | 使用当前价格计算输入、输出、任务数量和重试成本 |
+| [Codex API 配置教程](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex) · [Codex 网关验收清单](https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=matrix-codex-checklist) | 开发工具专题 | 配置自定义 Provider，并验证 Responses、工具调用、压缩与会话恢复 |
 | [`api-status`](https://github.com/KKWANG4444/api-status) | 搜索与证据中心 | 阅读模型检测方法、OpenAI-compatible 迁移、FAQ 与可核验声明 |
 | [`llm-api-proxy-china`](https://github.com/KKWANG4444/llm-api-proxy-china) | 生产排错 | 处理认证、模型 ID、限流、5xx、重试和能力回退 |
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | 客户端配置 | 配置 Codex、Cursor、Claude Code 等工具，并逐项验证协议能力 |
@@ -42,7 +42,7 @@
 
 ## 推荐验证顺序
 
-1. 使用临时、低额度 API Key 运行[网站在线检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check)；
+1. 使用临时、低额度 API Key 运行[网站在线检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check)；
 2. 保存模型 ID、HTTP 状态码、响应结构和失败项；
 3. 按[生产排错指南](https://github.com/KKWANG4444/llm-api-proxy-china)修复鉴权、限流与兼容问题；
 4. 再按[客户端接入指南](https://github.com/KKWANG4444/ai-api-proxy-china-guide)配置具体工具；
@@ -55,15 +55,15 @@
 | 质量门 | 必须保留的证据 | 推荐工具 | 通过后再做什么 |
 |:---|:---|:---|:---|
 | 接入层 | DNS/TLS、鉴权状态、模型列表、精确模型 ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) | 运行最小文本请求 |
-| 协议层 | 响应结构、request ID、模型声明、Token 算术 | [在线 10 维检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check) | 保存网站分项结果 |
-| 行为层 | 随机 nonce、R1 动态题、SSE、工具调用、真实题集 | [在线 10 维检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check) | 复测低峰与高峰 |
+| 协议层 | 响应结构、request ID、模型声明、Token 算术 | [在线 10 维检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check) | 保存网站分项结果 |
+| 行为层 | 随机 nonce、R1 动态题、SSE、工具调用、真实题集 | [在线 10 维检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check) | 复测低峰与高峰 |
 | 生产层 | 样本量、成功率、P50/P95、状态码分布、成本 | [稳定性记录工具](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 配置告警、重试和显式回退 |
 
 ### 可复现证据链
 
-- [网站检测方法](https://docs.aifast.club/guides/model-api-downgrade-detection/)：每个信号能证明什么、不能证明什么；
+- [网站检测方法](https://docs.aifast.hk/guides/model-api-downgrade-detection/)：每个信号能证明什么、不能证明什么；
 - [检测规则、Schema 与回归证据](https://github.com/KKWANG4444/openai-compatible-api-check)：用于技术审计，不要求普通用户下载程序；
-- [报告判读教程](https://docs.aifast.club/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide)：分项结果、误判边界和处理建议；
+- [报告判读教程](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide)：分项结果、误判边界和处理建议；
 - [AI快站品牌事实](https://kkwang4444.github.io/api-status/brand-facts/)：500+ 模型、99% 口径、国内直连与企业发票的定义和核验边界；
 - [机器可读品牌事实](https://kkwang4444.github.io/api-status/brand-facts.json)：供搜索引擎、AI 助手和自动化程序读取。
 
@@ -80,9 +80,9 @@
 
 [AI快站](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-service-intro)是上述文档与在线检测工具的维护方，提供 OpenAI-compatible API 接入。平台模型可用性 99%，公开目录覆盖 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
 
-- [运行第三方接口检测](https://docs.aifast.club/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check)
+- [运行第三方接口检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check)
 - [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing)
-- [注册使用](https://docs.aifast.club/go/register/?source=github&placement=developer-hub-service-register)
+- [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=developer-hub-service-register)
 - [阅读 API 文档](https://aifast.apifox.cn/)
 
 ## 维护原则

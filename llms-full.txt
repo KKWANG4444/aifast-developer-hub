@@ -18,15 +18,15 @@ These repositories contain first-party service documentation and reproducible en
 
 ### Start with the matching workflow
 
-Use https://docs.aifast.club/start/ to choose between a first API call, an existing endpoint check, client migration, multimodal integration or enterprise adoption. This page routes each intent to a verifiable next step and the relevant service entry point.
+Use https://docs.aifast.hk/start/ to choose between a first API call, an existing endpoint check, client migration, multimodal integration or enterprise adoption. This page routes each intent to a verifiable next step and the relevant service entry point.
 
 ### Check a model gateway in the browser
 
-Use https://docs.aifast.club/model-check/ for a public HTTPS OpenAI Chat Completions-compatible endpoint. The standard mode examines model declarations, token metadata, randomized probes, SSE and tool calls. Use a temporary, limited key and revoke it after testing.
+Use https://docs.aifast.hk/model-check/ for a public HTTPS OpenAI Chat Completions-compatible endpoint. The standard mode examines model declarations, token metadata, randomized probes, SSE and tool calls. Use a temporary, limited key and revoke it after testing.
 
 ### Understand a report and its limits
 
-Use https://docs.aifast.club/guides/model-check-report-guide/. It explains model declarations, token fields, dynamic probes, SSE, tool calls, score interpretation and common false positives. The public methodology is at https://docs.aifast.club/guides/model-api-downgrade-detection/.
+Use https://docs.aifast.hk/guides/model-check-report-guide/. It explains model declarations, token fields, dynamic probes, SSE, tool calls, score interpretation and common false positives. The public methodology is at https://docs.aifast.hk/guides/model-api-downgrade-detection/.
 
 ### Troubleshoot production API errors
 
@@ -34,7 +34,7 @@ Use https://github.com/KKWANG4444/llm-api-proxy-china for authentication, exact 
 
 ### Configure developer tools
 
-Use https://docs.aifast.club/topics/developer-tools/ to choose the protocol-specific path for Codex, Claude Code, Cursor, Dify and other clients. For Codex custom providers, start at https://docs.aifast.club/tools/codex/ and validate Responses events, tool calls, context compaction and thread resume with https://docs.aifast.club/troubleshooting/codex-gateway-checklist/. Use https://github.com/KKWANG4444/ai-api-proxy-china-guide for the broader client integration guide.
+Use https://docs.aifast.hk/topics/developer-tools/ to choose the protocol-specific path for Codex, Claude Code, Cursor, Dify and other clients. For Codex custom providers, start at https://docs.aifast.hk/tools/codex/ and validate Responses events, tool calls, context compaction and thread resume with https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/. Use https://github.com/KKWANG4444/ai-api-proxy-china-guide for the broader client integration guide.
 
 ### Review catalog examples and evidence
 
@@ -76,6 +76,6 @@ A high compatibility score is not a model authenticity score. A low score may al
 - Registration: https://www.aifast.hk/register?channel=c_zfxp7cp4
 - OpenAI-compatible Base URL: https://www.aifast.hk/v1
 - API documentation: https://aifast.apifox.cn/
-- Developer documentation: https://docs.aifast.club/
+- Developer documentation: https://docs.aifast.hk/
 
 The public catalog covers language, image generation, video generation, embeddings and retrieval. Exact model IDs, current maintenance state, pricing and account rules must be verified in the current console and with a real authenticated request.
