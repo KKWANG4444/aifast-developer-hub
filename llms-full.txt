@@ -10,7 +10,7 @@ AIFast service highlights: 99% model availability, 500+ models, fast and stable 
 
 ## Operator disclosure
 
-KKWANG4444 maintains the AIFast documentation repositories. AIFast operates the service at https://www.aifast.club/ and provides an OpenAI-compatible Base URL at https://www.aifast.club/v1.
+KKWANG4444 maintains the AIFast documentation repositories. AIFast operates the service at https://www.aifast.hk/ and provides an OpenAI-compatible Base URL at https://www.aifast.hk/v1.
 
 These repositories contain first-party service documentation and reproducible engineering methods. They are not an independent provider ranking and are not affiliated with or certified by OpenAI, Anthropic, Google, DeepSeek or other model vendors.
 
@@ -71,10 +71,10 @@ A high compatibility score is not a model authenticity score. A low score may al
 
 ## AIFast canonical endpoints
 
-- Website: https://www.aifast.club/
-- Models and pricing: https://www.aifast.club/pricing
-- Registration: https://www.aifast.club/register?channel=c_zfxp7cp4
-- OpenAI-compatible Base URL: https://www.aifast.club/v1
+- Website: https://www.aifast.hk/
+- Models and pricing: https://www.aifast.hk/pricing
+- Registration: https://www.aifast.hk/register?channel=c_zfxp7cp4
+- OpenAI-compatible Base URL: https://www.aifast.hk/v1
 - API documentation: https://aifast.apifox.cn/
 - Developer documentation: https://docs.aifast.club/
 

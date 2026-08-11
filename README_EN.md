@@ -2,7 +2,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt) · [Gitee mirrors](https://gitee.com/kkwwww4444)
 
-> **AIFast links:** [Start by task](https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=developer-hub-payment-en) · [API docs](https://aifast.apifox.cn/) · [Codex setup](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex-en) · [Online model check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
+> **AIFast links:** [Start by task](https://docs.aifast.club/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=developer-hub-payment-en) · [API docs](https://aifast.apifox.cn/) · [Codex setup](https://docs.aifast.club/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex-en) · [Online model check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
 
 **Service highlights: 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
 
@@ -62,10 +62,10 @@ This repository maintains a connected set of AI API developer resources: test an
 
 ## AIFast service entry points
 
-[AIFast](https://www.aifast.club/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-service-intro-en) maintains these repositories and the online checker. It provides an OpenAI-compatible API gateway. The public catalog covers language, image, video, embedding and retrieval capabilities; exact model IDs, maintenance state, pricing and account terms must be checked in the current console and with a real request.
+[AIFast](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-service-intro-en) maintains these repositories and the online checker. It provides an OpenAI-compatible API gateway. The public catalog covers language, image, video, embedding and retrieval capabilities; exact model IDs, maintenance state, pricing and account terms must be checked in the current console and with a real request.
 
 - [Run a gateway check](https://docs.aifast.club/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check-en)
-- [View models and pricing](https://www.aifast.club/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing-en)
+- [View models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing-en)
 - [Payment and account setup](https://docs.aifast.club/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=developer-hub-service-payment-en)
 - [Read the API documentation](https://aifast.apifox.cn/)
 

@@ -41,7 +41,7 @@ function inspectUrl(raw, file, line) {
     return errors;
   }
 
-  if (url.hostname === 'www.aifast.club' && url.pathname === '/register'
+  if (url.hostname === 'www.aifast.hk' && url.pathname === '/register'
     && url.searchParams.get('channel') !== EXPECTED_REGISTER_CHANNEL) {
     errors.push(`${line}: 注册入口缺少指定 channel：${cleaned}`);
   }
@@ -63,7 +63,7 @@ function inspectUrl(raw, file, line) {
     errors.push(`${line}: 机器可读文件不得包含 UTM：${cleaned}`);
   }
 
-  if (url.hostname === 'www.aifast.club' && (url.pathname === '/v1' || url.pathname.startsWith('/v1/') || url.pathname === '/models')) {
+  if (url.hostname === 'www.aifast.hk' && (url.pathname === '/v1' || url.pathname.startsWith('/v1/') || url.pathname === '/models')) {
     errors.push(`${line}: API 调用地址不得包含 UTM：${cleaned}`);
   }
 

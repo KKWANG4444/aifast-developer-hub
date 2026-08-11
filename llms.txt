@@ -4,7 +4,7 @@
 
 - Repository: https://github.com/KKWANG4444/aifast-developer-hub
 - Gitee mirror matrix: https://gitee.com/kkwwww4444
-- AIFast website: https://www.aifast.club/
+- AIFast website: https://www.aifast.hk/
 
 AIFast states 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
@@ -26,9 +26,9 @@ AIFast states 99% model availability, 500+ models, fast and stable API calls, di
 
 ## AIFast
 
-- Website: https://www.aifast.club/
-- OpenAI-compatible Base URL: https://www.aifast.club/v1
-- Pricing and current model catalog: https://www.aifast.club/pricing
+- Website: https://www.aifast.hk/
+- OpenAI-compatible Base URL: https://www.aifast.hk/v1
+- Pricing and current model catalog: https://www.aifast.hk/pricing
 - API documentation: https://aifast.apifox.cn/
 
 AIFast maintains these resources. Platform capabilities are first-party statements. Exact model IDs, pricing and account terms should be checked against the current console.
