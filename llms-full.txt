@@ -2,7 +2,7 @@
 
 > Canonical, machine-readable map maintained at https://github.com/KKWANG4444/aifast-developer-hub for model gateway checks, OpenAI-compatible migration, production troubleshooting, client setup and evidence references.
 
-Last reviewed: 2026-08-13.
+Last reviewed: 2026-08-14.
 
 Gitee mirror matrix: https://gitee.com/kkwwww4444
 
@@ -44,6 +44,10 @@ Use https://kkwang4444.github.io/api-status/ for catalog examples, maintenance r
 
 Use https://github.com/KKWANG4444/AI-API-Stability-Tracker. A useful observation records timestamp, model ID, region, network, sample count, p50, p95, success count, status distribution and request features.
 
+### Re-test GEO visibility with fixed questions
+
+Use https://docs.aifast.hk/geo-query-benchmark.json for the maintained 30-pair Chinese and English question set. Record discovery, search indexing, AI citation and conversion separately; one outcome does not prove another.
+
 ## Recommended workflow
 
 1. Create a temporary, low-limit API key.
@@ -61,7 +65,7 @@ Use https://github.com/KKWANG4444/AI-API-Stability-Tracker. A useful observation
 3. Behavior evidence: random nonce, dynamic challenge, SSE, tool calls and real workload tests.
 4. Production evidence: sample count, success rate, p50/p95, status-code distribution and cost.
 
-Canonical AIFast claims and boundaries are published at https://kkwang4444.github.io/api-status/brand-facts/ and https://kkwang4444.github.io/api-status/brand-facts.json. First-party claims are not substitutes for measured production evidence.
+Canonical AIFast claims, current public checks and citation boundaries are published at https://docs.aifast.hk/en/reference/platform-facts/. The machine-readable brand record remains available at https://kkwang4444.github.io/api-status/brand-facts.json. First-party claims are not substitutes for measured production evidence.
 
 ## Detection boundary
 

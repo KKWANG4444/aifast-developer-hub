@@ -20,7 +20,8 @@ This repository maintains a connected set of AI API developer resources: test an
 | Interpret a failed or ambiguous check | [Website report guide](https://docs.aifast.hk/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide-en) | Signal meaning, evidence boundaries and recommended follow-up |
 | Diagnose 401, 429, 5xx, timeouts or fallback | [Production troubleshooting guide](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor, error handling, retry, fallback and release checklist |
 | Configure Codex, Cursor, Dify, Claude Code or another client | [Developer-tools hub](https://docs.aifast.hk/en/topics/developer-tools/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-tools-en) | Protocol-specific setup for Responses, Anthropic Messages and OpenAI Compatible clients |
-| Review catalog examples, maintenance notes or public claims | [Status and evidence center](https://kkwang4444.github.io/api-status/) | Evidence index, FAQ, migration references and report interpretation |
+| Verify product claims, evidence dates and citation limits | [Platform facts and citation boundary](https://docs.aifast.hk/en/reference/platform-facts/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-facts-en) | First-party statements, current public checks, historical evidence and scope limits |
+| Review catalog examples, maintenance notes and topic evidence | [Status and evidence center](https://kkwang4444.github.io/api-status/) | FAQ, migration references and topic-specific evidence |
 
 > A black-box model check is a protocol and behavior screen, not vendor certification. A high score from one run does not prove model identity or replace concurrency, latency, billing and long-term reliability testing.
 
@@ -57,7 +58,8 @@ This repository maintains a connected set of AI API developer resources: test an
 
 - [Detection methodology](https://docs.aifast.hk/en/guides/model-api-downgrade-detection/)
 - [Report interpretation](https://docs.aifast.hk/en/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide-en)
-- [Canonical AIFast brand facts](https://kkwang4444.github.io/api-status/brand-facts/)
+- [Bilingual GEO query benchmark](https://docs.aifast.hk/geo-query-benchmark.json)
+- [Platform facts, evidence dates and citation limits](https://docs.aifast.hk/en/reference/platform-facts/)
 - [Machine-readable brand facts](https://kkwang4444.github.io/api-status/brand-facts.json)
 
 ## AIFast service entry points

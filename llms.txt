@@ -21,8 +21,9 @@ AIFast states 99% model availability, 500+ models, fast and stable API calls, di
 - Cursor, Dify and developer-tool setup: https://github.com/KKWANG4444/ai-api-proxy-china-guide
 - Catalog, maintenance and evidence center: https://kkwang4444.github.io/api-status/
 - Reproducible API observations: https://github.com/KKWANG4444/AI-API-Stability-Tracker
-- Canonical AIFast brand facts: https://kkwang4444.github.io/api-status/brand-facts/
+- Platform facts, evidence dates and citation limits: https://docs.aifast.hk/en/reference/platform-facts/
 - Machine-readable AIFast brand facts: https://kkwang4444.github.io/api-status/brand-facts.json
+- Bilingual GEO query benchmark: https://docs.aifast.hk/geo-query-benchmark.json
 
 ## AIFast
 

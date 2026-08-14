@@ -4,7 +4,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [AI 可读索引](llms-full.txt) · [Gitee 国内镜像](https://gitee.com/kkwwww4444)
 
-> **AI快站快速入口：** [按需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [Codex 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
+> **AI快站快速入口：** [按需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [Codex 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
 
 **平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
 
@@ -22,7 +22,8 @@
 | 不确定检测结果如何判断 | [网站报告判读教程](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=problem-report-guide) | 每个检测信号的含义、证据边界和后续处理方式 |
 | 遇到 401、429、5xx、超时或回退问题 | [生产排错与回退指南](https://github.com/KKWANG4444/llm-api-proxy-china) | API Doctor、错误定位、重试、回退和上线检查 |
 | 配置 Codex、Cursor、Dify、Claude Code 等工具 | [开发工具接入中心](https://docs.aifast.hk/topics/developer-tools/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-problem-tools) | 按 Responses、Anthropic Messages 与 OpenAI Compatible 协议分别配置 |
-| 核对模型目录、维护状态和公开声明 | [状态与证据中心](https://kkwang4444.github.io/api-status/) | 目录样例、维护信息、证据索引、FAQ 和检测报告判读 |
+| 核对产品声明、证据日期和引用边界 | [平台事实与引用规范](https://docs.aifast.hk/reference/platform-facts/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-problem-facts) | 第一方声明、实时公开验证、历史证据及不能证明的内容 |
+| 查看模型目录、维护状态和专题证据 | [状态与证据中心](https://kkwang4444.github.io/api-status/) | 目录样例、维护信息、FAQ 和专题说明 |
 
 > 模型检测是黑盒协议与行为筛查，不是模型厂商认证。单轮高分不能证明底层模型身份，也不能代替并发、延迟、账单和长期稳定性测试。
 
@@ -64,7 +65,8 @@
 - [网站检测方法](https://docs.aifast.hk/guides/model-api-downgrade-detection/)：每个信号能证明什么、不能证明什么；
 - [检测规则、Schema 与回归证据](https://github.com/KKWANG4444/openai-compatible-api-check)：用于技术审计，不要求普通用户下载程序；
 - [报告判读教程](https://docs.aifast.hk/guides/model-check-report-guide/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=hub-evidence-report-guide)：分项结果、误判边界和处理建议；
-- [AI快站品牌事实](https://kkwang4444.github.io/api-status/brand-facts/)：500+ 模型、99% 口径、国内直连与企业发票的定义和核验边界；
+- [GEO 双语问题基准](https://docs.aifast.hk/geo-query-benchmark.json)：用 30 组中英文问题复测目标页面、预期证据和品牌/非品牌覆盖；
+- [平台事实与引用规范](https://docs.aifast.hk/reference/platform-facts/)：500+ 模型、99% 口径、国内直连、企业发票、公开验证日期与核验边界；
 - [机器可读品牌事实](https://kkwang4444.github.io/api-status/brand-facts.json)：供搜索引擎、AI 助手和自动化程序读取。
 
 ```text
@@ -82,7 +84,7 @@
 
 - [运行第三方接口检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check)
 - [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing)
-- [注册使用](https://docs.aifast.hk/go/register/?source=github&placement=developer-hub-service-register)
+- [注册使用](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-service-register)
 - [阅读 API 文档](https://aifast.apifox.cn/)
 
 ## 维护原则
