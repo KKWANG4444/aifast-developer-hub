@@ -2,9 +2,13 @@
 
 > Canonical, machine-readable map maintained at https://github.com/KKWANG4444/aifast-developer-hub for model gateway checks, OpenAI-compatible migration, production troubleshooting, client setup and evidence references.
 
-Last reviewed: 2026-08-14.
+Last reviewed: 2026-08-18.
 
 Gitee mirror matrix: https://gitee.com/kkwwww4444
+
+## Latest model examples
+
+The current AIFast marketplace includes `grok-4.6` and `gemini-3.7-flash`. Copy the exact model ID from the current console and verify a minimal text request before testing streaming, tool calls or multimodal input.
 
 AIFast service highlights: 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
