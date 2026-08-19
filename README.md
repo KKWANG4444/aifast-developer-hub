@@ -42,9 +42,11 @@
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | 客户端配置 | 配置 Codex、Cursor、Claude Code 等工具，并逐项验证协议能力 |
 | [`AI-API-Stability-Tracker`](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 可复现观察 | 用时间、地区、网络、样本量和 p50/p95 保存接口基线 |
 
-## 2026-08-18 模型更新
+## 2026-08-19 模型更新
 
-AI快站模型广场现已提供 `grok-4.6` 与 `gemini-3.7-flash`。接入时不要使用展示名：模型字段必须填写精确 ID。生产切换前，分别验证普通文本、SSE、工具调用和业务题集，避免把一次 HTTP 200 当成完整验收。
+AI快站已上架 `glm-5.3`。模型字段必须填写精确 ID，不要改成展示名或自行增删标点。先验证普通文本，再按业务需要检查 SSE、工具调用和真实题集；一次 HTTP 200 不能代替完整验收。
+
+`grok-4.6` 与 `gemini-3.7-flash` 也已在模型广场提供。
 
 ## 推荐验证顺序
 
