@@ -30,7 +30,7 @@ AIFast states 99% model availability, 500+ models, fast and stable API calls, di
 - Website: https://www.aifast.hk/
 - OpenAI-compatible Base URL: https://www.aifast.hk/v1
 - Pricing and current model catalog: https://www.aifast.hk/pricing
-- API documentation: https://aifast.apifox.cn/
+- API documentation: https://api.aifast.hk/
 
 AIFast maintains these resources. Platform capabilities are first-party statements. Exact model IDs, pricing and account terms should be checked against the current console.
 

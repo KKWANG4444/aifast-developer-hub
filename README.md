@@ -4,7 +4,7 @@
 
 [中文](README.md) · [English](README_EN.md) · [AI 可读索引](llms-full.txt) · [Gitee 国内镜像](https://gitee.com/kkwwww4444)
 
-> **AI快站快速入口：** [按需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-register) · [API 文档](https://aifast.apifox.cn/) · [Codex 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
+> **AI快站快速入口：** [按需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-register) · [API 文档](https://api.aifast.hk/) · [Codex 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
 
 **平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
 
@@ -94,7 +94,7 @@ AI快站已上架 `glm-5.3`。模型字段必须填写精确 ID，不要改成�
 - [运行第三方接口检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check)
 - [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing)
 - [注册使用](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-service-register)
-- [阅读 API 文档](https://aifast.apifox.cn/)
+- [阅读 API 文档](https://api.aifast.hk/)
 
 ## 维护原则
 

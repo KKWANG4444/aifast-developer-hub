@@ -83,7 +83,7 @@ A high compatibility score is not a model authenticity score. A low score may al
 - Models and pricing: https://www.aifast.hk/pricing
 - Registration: https://www.aifast.hk/register?channel=c_zfxp7cp4
 - OpenAI-compatible Base URL: https://www.aifast.hk/v1
-- API documentation: https://aifast.apifox.cn/
+- API documentation: https://api.aifast.hk/
 - Developer documentation: https://docs.aifast.hk/
 
 The public catalog covers language, image generation, video generation, embeddings and retrieval. Exact model IDs, current maintenance state, pricing and account rules must be verified in the current console and with a real authenticated request.
