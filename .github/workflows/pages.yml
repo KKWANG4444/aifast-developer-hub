@@ -1,4 +1,4 @@
-name: Deploy developer hub Pages
+name: Verify developer hub Pages
 
 on:
   push:
@@ -7,33 +7,27 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  build:
+  verify-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out
-        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-      - name: Configure Pages
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
-      - name: Upload site
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
-        with:
-          path: .
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verify published source via GitHub API
+        env:
+          REPOSITORY: ${{ github.repository }}
+          REVISION: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, urllib.request
+          repo = os.environ['REPOSITORY']
+          rev = os.environ['REVISION']
+          base = f"https://raw.githubusercontent.com/{repo}/{rev}"
+          with urllib.request.urlopen(base + "/index.html", timeout=20) as r:
+              html = r.read().decode("utf-8")
+          assert "<title>OpenAI-Compatible API Testing &amp; Troubleshooting | AIFast Developer Hub</title>" in html or "<title>OpenAI-Compatible API Testing & Troubleshooting | AIFast Developer Hub</title>" in html
+          assert html.count("<h1>") == 1
+          assert "https://docs.aifast.hk/model-check/" in html
+          assert "https://www.aifast.hk/v1" in html
+          print(json.dumps({"index": "ok", "h1": 1, "bytes": len(html)}))
+          PY
