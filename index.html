@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OpenAI-Compatible API Testing & Troubleshooting | AIFast Developer Hub</title>
-  <meta name="description" content="Reproducible OpenAI-compatible API checks: Base URL, authentication, model IDs, streaming, tool calls, errors, retries and production readiness.">
+  <title>OpenAI-Compatible API Testing, Cursor & Dify Troubleshooting | AIFast</title>
+  <meta name="description" content="Test an OpenAI-compatible API, Cursor custom API or Dify endpoint: verify Base URL, API key, model IDs, streaming, tool calls and 401/404/429 errors before production.">
   <link rel="canonical" href="https://kkwang4444.github.io/aifast-developer-hub/">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="OpenAI-Compatible API Testing & Troubleshooting">
-  <meta property="og:description" content="Reproducible API compatibility checks and production troubleshooting for OpenAI SDK clients.">
+  <meta property="og:title" content="OpenAI-Compatible API Testing, Cursor & Dify Troubleshooting">
+  <meta property="og:description" content="Test OpenAI-compatible APIs, Cursor custom API and Dify endpoints with reproducible checks.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kkwang4444.github.io/aifast-developer-hub/">
   <meta property="og:site_name" content="AIFast Developer Hub">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="OpenAI-Compatible API Testing & Troubleshooting">
-  <meta name="twitter:description" content="Reproducible OpenAI-compatible API checks and production troubleshooting.">
+  <meta name="twitter:title" content="OpenAI-Compatible API Testing, Cursor & Dify Troubleshooting">
+  <meta name="twitter:description" content="Test OpenAI-compatible APIs, Cursor custom API and Dify endpoints.">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","name":"AIFast Developer Hub","url":"https://kkwang4444.github.io/aifast-developer-hub/","inLanguage":"en"},
-    {"@type":"TechArticle","headline":"OpenAI-compatible API testing and production troubleshooting","description":"A practical guide to verify an OpenAI-compatible API endpoint before production.","mainEntityOfPage":"https://kkwang4444.github.io/aifast-developer-hub/","author":{"@type":"Organization","name":"AIFast Developer Hub"},"inLanguage":"en"},
+    {"@type":"TechArticle","headline":"OpenAI-compatible API testing for Cursor, Dify and Claude Code","description":"Test an OpenAI-compatible API, Cursor custom API or Dify endpoint and troubleshoot Base URL, authentication, streaming, tool calls, 401, 404 and 429 errors.","mainEntityOfPage":"https://kkwang4444.github.io/aifast-developer-hub/","author":{"@type":"Organization","name":"AIFast Developer Hub"},"inLanguage":"en"},
     {"@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"What does an OpenAI-compatible API check verify?","acceptedAnswer":{"@type":"Answer","text":"It can verify request and response format, authentication, declared model ID, streaming, tool calls and observable error behavior. It cannot prove the underlying vendor model identity from one request."}},
       {"@type":"Question","name":"Should every gateway support streaming and tool calls?","acceptedAnswer":{"@type":"Answer","text":"No. Test the capabilities your workload needs. A batch workflow may not need streaming or tools, while an agent workflow usually needs both."}},
@@ -32,8 +32,8 @@
 </head>
 <body><main>
   <div class="eyebrow">AIFast Developer Hub</div>
-  <h1>OpenAI-compatible API testing and production troubleshooting</h1>
-  <p class="lead">Use this page to make a minimal API call, check the OpenAI-compatible contract your client depends on, and turn a vague 401, 404, 429 or timeout into a reproducible production finding.</p>
+  <h1>OpenAI-compatible API testing for Cursor, Dify and Claude Code</h1>
+  <p class="lead">Test an OpenAI-compatible API, Cursor custom API or Dify endpoint with a minimal request. Verify the Base URL, API key, model ID, streaming and tool calls, then turn a vague 401, 404, 429 or timeout into a reproducible production finding.</p>
   <div class="actions"><a class="button primary" href="https://docs.aifast.hk/en/start/">Choose a workflow</a><a class="button" href="https://docs.aifast.hk/en/model-check/">Run a model gateway check</a><a class="button" href="https://github.com/KKWANG4444/aifast-developer-hub">View source and references</a></div>
   <div class="note"><strong>Scope:</strong> these are black-box protocol and behavior checks. They do not certify a vendor's underlying model identity, and a passing one-off request is not a production SLA.</div>
   <h2>Start with the problem you have</h2>

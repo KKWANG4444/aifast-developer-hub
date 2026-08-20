@@ -1,6 +1,6 @@
-# AIFast Developer Hub project map
+# OpenAI-compatible API Testing, Cursor Custom API and Dify Troubleshooting
 
-> Canonical technical index maintained in the AIFast Developer Hub repository for model gateway checking, OpenAI-compatible migration, client setup, production troubleshooting and evidence references.
+> Canonical technical index for OpenAI-compatible API testing, Cursor custom API, Dify integration, Claude Code setup, API gateway troubleshooting and model gateway checks.
 
 - Repository: https://github.com/KKWANG4444/aifast-developer-hub
 - Gitee mirror matrix: https://gitee.com/kkwwww4444

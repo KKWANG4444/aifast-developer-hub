@@ -1,4 +1,4 @@
-# OpenAI-compatible API 开发者中心：接入、检测与生产排错
+# OpenAI-compatible API 测试：Cursor 自定义 API、Dify 与 Claude Code 排错
 
 <p align="center"><img src="assets/social-preview.png" width="100%" alt="AI快站开发者中心：可复制、可验证的接入与生产排错路径"></p>
 
@@ -8,7 +8,7 @@
 
 **平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
 
-这是一个面向 **OpenAI-compatible API 接入与排错** 的实操入口：先验证 Base URL、鉴权和协议，再检查流式输出、工具调用与模型行为，最后完成 Codex、Cursor、Dify、Claude Code 等客户端配置。示例强调可复制、可复测，并注明证据和结论边界。
+这是一个面向 **OpenAI-compatible API 测试与排错** 的实操入口，覆盖 **Cursor 自定义 API、Dify 自定义模型 API、Claude Code 国内 API** 等高频配置场景：先验证 Base URL、API Key 和模型 ID，再检查流式输出、工具调用与模型行为，最后处理 401、404、429、5xx 和超时。示例强调可复制、可复测，并注明证据和结论边界。
 
 如果你只想解决一个问题：把现有 OpenAI SDK 项目接入一个兼容网关并确认它真的可用，请从[首次调用与兼容性检查](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-primary-intent)开始。
 

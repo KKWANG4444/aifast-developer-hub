@@ -1,4 +1,4 @@
-# OpenAI-Compatible API Developer Hub: Integration, Testing and Troubleshooting
+# OpenAI-Compatible API Testing: Cursor Custom API, Dify and Claude Code
 
 [中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt) · [Gitee mirrors](https://gitee.com/kkwwww4444)
 
@@ -6,7 +6,7 @@
 
 **Service highlights: 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
 
-This repository maintains a connected set of AI API developer resources: test an OpenAI-compatible endpoint, troubleshoot migration and production errors, then configure the client you actually use. Examples are reproducible and state their evidence boundaries.
+This repository is a practical entry point for **OpenAI-compatible API testing**, **Cursor custom API**, **Dify custom model API** and **Claude Code custom provider** setup. Verify the Base URL, API key and model ID first; then test streaming and tool calls and troubleshoot 401, 404, 429, 5xx and timeout errors. Examples are reproducible and state their evidence boundaries.
 
 ## Choose an entry point
 
