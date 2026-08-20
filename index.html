@@ -4,49 +4,64 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenAI-Compatible API Testing & Troubleshooting | AIFast Developer Hub</title>
-  <meta name="description" content="Practical OpenAI-compatible API integration, compatibility testing, Codex and Cursor setup, and production troubleshooting with reproducible checks.">
+  <meta name="description" content="Reproducible OpenAI-compatible API checks: Base URL, authentication, model IDs, streaming, tool calls, errors, retries and production readiness.">
   <link rel="canonical" href="https://kkwang4444.github.io/aifast-developer-hub/">
+  <meta name="robots" content="index,follow">
   <meta property="og:title" content="OpenAI-Compatible API Testing & Troubleshooting">
-  <meta property="og:description" content="A practical developer hub for API integration, compatibility checks and production troubleshooting.">
+  <meta property="og:description" content="Reproducible API compatibility checks and production troubleshooting for OpenAI SDK clients.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kkwang4444.github.io/aifast-developer-hub/">
+  <meta property="og:site_name" content="AIFast Developer Hub">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OpenAI-Compatible API Testing & Troubleshooting">
+  <meta name="twitter:description" content="Reproducible OpenAI-compatible API checks and production troubleshooting.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"WebSite","name":"AIFast Developer Hub","url":"https://kkwang4444.github.io/aifast-developer-hub/","inLanguage":"en"},
+    {"@type":"TechArticle","headline":"OpenAI-compatible API testing and production troubleshooting","description":"A practical guide to verify an OpenAI-compatible API endpoint before production.","mainEntityOfPage":"https://kkwang4444.github.io/aifast-developer-hub/","author":{"@type":"Organization","name":"AIFast Developer Hub"},"inLanguage":"en"},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What does an OpenAI-compatible API check verify?","acceptedAnswer":{"@type":"Answer","text":"It can verify request and response format, authentication, declared model ID, streaming, tool calls and observable error behavior. It cannot prove the underlying vendor model identity from one request."}},
+      {"@type":"Question","name":"Should every gateway support streaming and tool calls?","acceptedAnswer":{"@type":"Answer","text":"No. Test the capabilities your workload needs. A batch workflow may not need streaming or tools, while an agent workflow usually needs both."}},
+      {"@type":"Question","name":"What should be recorded before production?","acceptedAnswer":{"@type":"Answer","text":"Record the exact endpoint path, model ID, HTTP status, request ID where available, response shape, sample size, error distribution, latency percentiles and cost."}}
+    ]}
+  ]}
+  </script>
   <style>
-    :root{color-scheme:light dark;--bg:#0b1020;--panel:#131b31;--text:#eef3ff;--muted:#aab7d4;--accent:#79a8ff;--line:#2a385c}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    main{max-width:980px;margin:auto;padding:56px 22px 72px}a{color:var(--accent)}.eyebrow{color:#9dbbff;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
-    h1{font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.05;max-width:850px;margin:14px 0 22px}h2{margin-top:46px;font-size:1.65rem}p{max-width:760px;color:var(--muted)}
-    .lead{font-size:1.2rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.button{display:inline-block;border:1px solid var(--accent);border-radius:8px;padding:11px 16px;text-decoration:none;font-weight:700}.primary{background:var(--accent);color:#081127}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px;margin-top:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}.card h3{margin:0 0 8px;font-size:1.1rem}.card p{font-size:.95rem;margin:0}.note{border-left:3px solid var(--accent);padding:5px 18px;margin:30px 0}.steps{padding-left:24px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:54px;padding-top:20px;color:var(--muted);font-size:.9rem}
+    :root{color-scheme:light dark;--bg:#0b1020;--panel:#131b31;--text:#eef3ff;--muted:#c2cce0;--accent:#79a8ff;--line:#2a385c;--code:#080d19}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:980px;margin:auto;padding:56px 22px 72px}a{color:var(--accent)}.eyebrow{color:#9dbbff;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}h1{font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.05;max-width:850px;margin:14px 0 22px}h2{margin-top:48px;font-size:1.7rem}h3{margin-bottom:8px}p,li{color:var(--muted)}.lead{font-size:1.2rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.button{display:inline-block;border:1px solid var(--accent);border-radius:8px;padding:11px 16px;text-decoration:none;font-weight:700}.primary{background:var(--accent);color:#081127}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px;margin-top:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}.card p{font-size:.95rem;margin:0}.note{border-left:3px solid var(--accent);padding:5px 18px;margin:30px 0}.steps{padding-left:24px}.code{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:16px;overflow:auto;color:#d6e2ff;white-space:pre-wrap}details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:12px 0}summary{font-weight:700;cursor:pointer}footer{border-top:1px solid var(--line);margin-top:54px;padding-top:20px;color:var(--muted);font-size:.9rem}
   </style>
 </head>
-<body>
-<main>
+<body><main>
   <div class="eyebrow">AIFast Developer Hub</div>
   <h1>OpenAI-compatible API testing and production troubleshooting</h1>
-  <p class="lead">A practical starting point for developers who need to connect an existing OpenAI SDK project, verify an API gateway, or diagnose failures before production.</p>
-  <div class="actions">
-    <a class="button primary" href="https://docs.aifast.hk/start/">Choose a workflow</a>
-    <a class="button" href="https://docs.aifast.hk/model-check/">Run a model gateway check</a>
-    <a class="button" href="https://github.com/KKWANG4444/aifast-developer-hub">View the repository</a>
-  </div>
-  <div class="note"><strong>Scope:</strong> These checks are black-box protocol and behavior tests. They do not certify a vendor's underlying model identity and should be repeated with real workloads.</div>
+  <p class="lead">Use this page to make a minimal API call, check the OpenAI-compatible contract your client depends on, and turn a vague 401, 404, 429 or timeout into a reproducible production finding.</p>
+  <div class="actions"><a class="button primary" href="https://docs.aifast.hk/en/start/">Choose a workflow</a><a class="button" href="https://docs.aifast.hk/en/model-check/">Run a model gateway check</a><a class="button" href="https://github.com/KKWANG4444/aifast-developer-hub">View source and references</a></div>
+  <div class="note"><strong>Scope:</strong> these are black-box protocol and behavior checks. They do not certify a vendor's underlying model identity, and a passing one-off request is not a production SLA.</div>
   <h2>Start with the problem you have</h2>
   <section class="grid">
-    <article class="card"><h3>First API call</h3><p>Confirm the Base URL, authentication, model ID and minimal response before adding streaming or tools. <a href="https://docs.aifast.hk/start/">Start here</a>.</p></article>
-    <article class="card"><h3>Compatibility testing</h3><p>Check response structure, token metadata, SSE and tool calls against an OpenAI-compatible endpoint. <a href="https://docs.aifast.hk/model-check/">Open the checker</a>.</p></article>
-    <article class="card"><h3>Codex, Cursor and Dify</h3><p>Use protocol-specific setup guides, then validate the actual events and tool behavior instead of relying on a successful HTTP 200. <a href="https://docs.aifast.hk/topics/developer-tools/">Developer tools</a>.</p></article>
-    <article class="card"><h3>Production errors</h3><p>Work through 401, 404, 429, 5xx, timeouts, retries and fallback behavior with a reproducible checklist. <a href="https://github.com/KKWANG4444/llm-api-proxy-china">Troubleshooting guide</a>.</p></article>
+    <article class="card"><h3>First API call</h3><p>Confirm the Base URL, authentication, model ID and minimal response before adding streaming or tools. <a href="https://docs.aifast.hk/en/start/">Start here</a>.</p></article>
+    <article class="card"><h3>Compatibility testing</h3><p>Check response structure, token metadata, SSE and tool calls against your endpoint. <a href="https://docs.aifast.hk/en/model-check/">Open the checker</a>.</p></article>
+    <article class="card"><h3>Codex, Cursor and Dify</h3><p>Use protocol-specific setup, then verify actual events and tool behavior. <a href="https://docs.aifast.hk/en/topics/developer-tools/">Developer tools</a>.</p></article>
+    <article class="card"><h3>Production errors</h3><p>Work through 401, 404, 429, 5xx, timeouts, retries and fallback behavior. <a href="https://github.com/KKWANG4444/llm-api-proxy-china">Troubleshooting guide</a>.</p></article>
   </section>
+  <h2>Minimal reproducible OpenAI-compatible request</h2>
+  <p>Keep the API Base URL as configuration, not as a browseable marketing link. The example below uses the documented AIFast endpoint; replace the environment variables with the gateway you are evaluating and never paste a live key into an issue, screenshot or public repository.</p>
+  <pre class="code"><code>export OPENAI_BASE_URL="https://www.aifast.hk/v1"
+export OPENAI_API_KEY="replace-with-a-limited-test-key"
+
+curl -sS "$OPENAI_BASE_URL/chat/completions" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"YOUR_CURRENT_MODEL_ID","messages":[{"role":"user","content":"Return only: ok"}]}'</code></pre>
+  <p>For a useful record, retain the endpoint path, configured model ID, timestamp, HTTP status, request ID when returned, response shape, and any failure body. Then repeat with the capability that your actual workload needs rather than treating a basic 200 as complete validation.</p>
   <h2>Four verification gates</h2>
-  <ol class="steps">
-    <li><strong>Access:</strong> DNS/TLS, authentication, model listing and exact model ID.</li>
-    <li><strong>Protocol:</strong> response structure, request ID, declared model and token arithmetic.</li>
-    <li><strong>Behavior:</strong> randomized probes, streaming, tool calls and a real workload.</li>
-    <li><strong>Production:</strong> sample size, success rate, p50/p95 latency, errors, cost and rollback.</li>
-  </ol>
+  <ol class="steps"><li><strong>Access:</strong> DNS/TLS, authentication, endpoint path, model listing where available, and the current account-callable model ID.</li><li><strong>Protocol:</strong> response structure, request ID, declared model and token arithmetic.</li><li><strong>Behavior:</strong> randomized probes, streaming, tool calls and a real workload when those capabilities are required.</li><li><strong>Production:</strong> sample size, success rate, p50/p95 latency, error distribution, cost and rollback behavior.</li></ol>
+  <h2>Common API failures</h2>
+  <section class="grid"><article class="card"><h3>401 or 403</h3><p>Check the authorization header, the account scope, accidental whitespace in a key, and whether a proxy removed the header.</p></article><article class="card"><h3>404 or /v1/v1</h3><p>Check whether the client appends <code>/v1</code>, <code>/chat/completions</code> or another path itself. Test the final request URL, not only the configured string.</p></article><article class="card"><h3>429, timeout or 5xx</h3><p>Record the response headers and retry policy. Separate rate limiting, upstream timeouts and client-side cancellation before adding fallback.</p></article></section>
+  <h2>Frequently asked questions</h2>
+  <details><summary>What does an OpenAI-compatible API check verify?</summary><p>It can verify request and response format, authentication, declared model ID, streaming, tool calls and observable error behavior. It cannot prove the underlying vendor model identity from one request.</p></details>
+  <details><summary>Should every gateway support streaming and tool calls?</summary><p>No. Test the capabilities your workload needs. A batch workflow may not need streaming or tools; an agent workflow usually needs both.</p></details>
+  <details><summary>What should be recorded before production?</summary><p>Record the exact endpoint path, model ID, HTTP status, request ID where available, response shape, sample size, error distribution, latency percentiles and cost.</p></details>
   <h2>Related resources</h2>
-  <p><a href="https://kkwang4444.github.io/api-status/">API status and evidence center</a> · <a href="https://docs.aifast.hk/guides/model-check-report-guide/">How to read a check report</a> · <a href="https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/">Codex gateway checklist</a> · <a href="https://www.aifast.hk/v1">AIFast OpenAI-compatible endpoint</a></p>
-  <footer>Maintained by KKWANG4444. Claims about current availability, models, pricing and account terms should be checked against the current AIFast console.</footer>
-</main>
-</body>
-</html>
+  <p><a href="https://kkwang4444.github.io/api-status/">API status and evidence center</a> · <a href="https://docs.aifast.hk/en/guides/model-check-report-guide/">How to read a check report</a> · <a href="https://docs.aifast.hk/en/troubleshooting/codex-gateway-checklist/">Codex gateway checklist</a> · <a href="https://docs.aifast.hk/en/reference/platform-facts/">Platform facts and citation limits</a></p>
+  <footer>Maintained by KKWANG4444. Availability, pricing, model catalog and account terms change; verify them in the current AIFast console and with a real request.</footer>
+</main></body></html>

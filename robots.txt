@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kkwang4444.github.io/aifast-developer-hub/sitemap.xml
