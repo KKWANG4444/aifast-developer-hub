@@ -25,8 +25,9 @@ jobs:
           base = f"https://raw.githubusercontent.com/{repo}/{rev}"
           with urllib.request.urlopen(base + "/index.html", timeout=20) as r:
               html = r.read().decode("utf-8")
-          assert "<title>OpenAI-Compatible API Testing &amp; Troubleshooting | AIFast Developer Hub</title>" in html or "<title>OpenAI-Compatible API Testing & Troubleshooting | AIFast Developer Hub</title>" in html
+          assert "<title>OpenAI-Compatible API Testing, Cursor &amp; Dify Troubleshooting | AIFast</title>" in html or "<title>OpenAI-Compatible API Testing, Cursor & Dify Troubleshooting | AIFast</title>" in html
           assert html.count("<h1>") == 1
+          assert "Cursor custom API" in html and "Dify endpoint" in html
           assert "https://docs.aifast.hk/en/model-check/" in html
           assert "https://www.aifast.hk/v1" in html
           assert 'application/ld+json' in html and 'FAQPage' in html
