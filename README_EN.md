@@ -1,4 +1,4 @@
-# AIFast Developer Hub: Codex, model gateway checks and API troubleshooting
+# OpenAI-Compatible API Developer Hub: Integration, Testing and Troubleshooting
 
 [中文](README.md) · [English](README_EN.md) · [LLM-readable index](llms-full.txt) · [Gitee mirrors](https://gitee.com/kkwwww4444)
 
