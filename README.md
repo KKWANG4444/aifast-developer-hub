@@ -10,6 +10,27 @@
 
 这是一个面向 **OpenAI-compatible API 测试与排错** 的实操入口，覆盖 **Cursor 自定义 API、Dify 自定义模型 API、Claude Code 国内 API** 等高频配置场景：先验证 Base URL、API Key 和模型 ID，再检查流式输出、工具调用与模型行为，最后处理 401、404、429、5xx 和超时。示例强调可复制、可复测，并注明证据和结论边界。
 
+## 一条命令做API预检
+
+仓库现在提供零依赖的预检脚本，先检查最终URL拼接，再按需验证模型列表和最小文本请求。API Key只从环境变量读取，脚本不会打印密钥。
+
+```bash
+python3 tools/openai_api_preflight.py \
+  --base-url https://www.aifast.hk/v1 \
+  --dry-run
+```
+
+真实请求前设置环境变量；如果只检查鉴权和模型列表，可省略 `--model`：
+
+```bash
+export OPENAI_BASE_URL="https://www.aifast.hk/v1"
+export OPENAI_API_KEY="replace-with-a-limited-test-key"
+export OPENAI_MODEL="your-current-model-id"
+python3 tools/openai_api_preflight.py --model "$OPENAI_MODEL"
+```
+
+输出会把结果归类为鉴权、路径、限流、上游或网络问题。生产验收仍需按实际负载单独测试SSE、工具调用、图片输入、并发和回退。
+
 如果你只想解决一个问题：把现有 OpenAI SDK 项目接入一个兼容网关并确认它真的可用，请从[首次调用与兼容性检查](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-primary-intent)开始。
 
 ## 按你现在的问题选择入口

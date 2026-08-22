@@ -30,6 +30,7 @@ jobs:
           assert "Cursor custom API" in html and "Dify endpoint" in html
           assert "https://docs.aifast.hk/en/model-check/" in html
           assert "https://www.aifast.hk/v1" in html
+          assert "openai_api_preflight.py" in html
           assert 'application/ld+json' in html and 'FAQPage' in html
           for path in ('robots.txt', 'sitemap.xml'):
               with urllib.request.urlopen(base + '/' + path, timeout=20) as r:

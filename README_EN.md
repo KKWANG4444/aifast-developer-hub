@@ -8,6 +8,18 @@
 
 This repository is a practical entry point for **OpenAI-compatible API testing**, **Cursor custom API**, **Dify custom model API** and **Claude Code custom provider** setup. Verify the Base URL, API key and model ID first; then test streaming and tool calls and troubleshoot 401, 404, 429, 5xx and timeout errors. Examples are reproducible and state their evidence boundaries.
 
+## Run an API preflight in one command
+
+The repository includes a dependency-free preflight script. It validates the final endpoint paths and can check model listing plus a minimal chat request. The API key is read only from the environment and is never printed.
+
+```bash
+python3 tools/openai_api_preflight.py \
+  --base-url https://www.aifast.hk/v1 \
+  --dry-run
+```
+
+For a live check, set `OPENAI_API_KEY` and optionally pass `--model YOUR_CURRENT_MODEL_ID`. The output classifies authentication, path, quota, upstream, and network failures. Streaming, tool calls, images, concurrency, and fallback still need workload-specific tests.
+
 ## Choose an entry point
 
 | Problem | Start here | Output |
