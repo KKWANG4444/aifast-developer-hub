@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenAI Base URL Checker: Fix /v1/v1, Cursor and Dify Endpoints | AIFast</title>
+  <meta name="description" content="Check an OpenAI-compatible Base URL locally. Detect duplicated /v1 paths, full endpoint mistakes, and copy correct models, chat and Responses URLs for Cursor, Dify and custom clients.">
+  <link rel="canonical" href="https://kkwang4444.github.io/aifast-developer-hub/tools/base-url-checker/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="OpenAI Base URL Checker: Fix /v1/v1, Cursor and Dify Endpoints">
+  <meta property="og:description" content="A local browser checker for OpenAI-compatible Base URL and endpoint path mistakes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kkwang4444.github.io/aifast-developer-hub/tools/base-url-checker/">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"AIFast OpenAI Base URL Checker","applicationCategory":"DeveloperApplication","operatingSystem":"Web browser","url":"https://kkwang4444.github.io/aifast-developer-hub/tools/base-url-checker/","description":"Locally checks OpenAI-compatible Base URL construction without sending the input to a server.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <style>
+    :root{color-scheme:light dark;--bg:#0b1020;--panel:#131b31;--text:#eef3ff;--muted:#c2cce0;--accent:#79a8ff;--line:#2a385c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:960px;margin:auto;padding:48px 22px 72px}a{color:var(--accent)}h1{font-size:clamp(2rem,5vw,3.8rem);line-height:1.08}h2{margin-top:44px}.lead{font-size:1.2rem;color:var(--muted)}.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin:28px 0}label{display:block;font-weight:700;margin:12px 0 6px}input,select,button{font:inherit;border-radius:8px;border:1px solid var(--line);padding:11px 12px}input,select{width:100%;background:#080d19;color:var(--text)}button{background:var(--accent);color:#081127;font-weight:700;cursor:pointer;margin-top:16px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:#080d19;border:1px solid var(--line);border-radius:10px;padding:16px}.card code{display:block;color:#d6e2ff;overflow-wrap:anywhere}.ok{border-color:#56d364}.warn{border-color:#f2cc60}.note{border-left:3px solid var(--accent);padding-left:16px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:50px;padding-top:18px;color:var(--muted)}
+  </style>
+</head>
+<body><main>
+  <p><a href="../../">← AIFast Developer Hub</a></p>
+  <h1>OpenAI Base URL Checker</h1>
+  <p class="lead">Find the common <code>/v1/v1</code> and full-endpoint mistakes before Cursor, Dify or an OpenAI-compatible client returns a confusing 404.</p>
+  <p class="note">Everything runs in this browser. The Base URL is not uploaded. Do not paste an API key here.</p>
+  <section class="panel">
+    <label for="base-url">Base URL</label>
+    <input id="base-url" value="https://www.aifast.hk/v1" autocomplete="off" spellcheck="false">
+    <label for="client">Client behavior</label>
+    <select id="client"><option value="appends-v1">Client appends /v1</option><option value="keeps-base">Client keeps the supplied base path</option></select>
+    <button id="check" type="button">Check URL locally</button>
+    <p id="summary" role="status"></p>
+    <div id="results" class="grid" aria-live="polite"></div>
+  </section>
+  <h2>What this catches</h2>
+  <ul><li><code>https://host/v1</code> plus a client that appends <code>/v1</code> becomes <code>/v1/v1</code>.</li><li>A full <code>/chat/completions</code> URL is not a Base URL when the client appends its own endpoint.</li><li>Different clients may use Chat Completions or Responses paths. Check the final request URL in the client logs.</li></ul>
+  <h2>After the URL check</h2>
+  <p>Use a limited test key only after the URL is correct. Check <a href="https://docs.aifast.hk/model-check/?utm_source=github&amp;utm_medium=pages&amp;utm_campaign=developer_acquisition&amp;utm_content=base-url-checker-online">the online model gateway checker</a> for protocol behavior, then follow <a href="https://docs.aifast.hk/go/register/?source=github&amp;placement=developer-hub-base-url-register">the AIFast start path</a> if you need an account.</p>
+  <footer>This browser tool checks URL construction only. It does not validate a key, model identity, uptime, latency or an SLA. Maintained by AIFast Developer Hub.</footer>
+</main>
+<script>
+(() => {
+  const input=document.querySelector('#base-url'), client=document.querySelector('#client'), results=document.querySelector('#results'), summary=document.querySelector('#summary');
+  const join=(base,path)=>base.replace(/\/+$/,'')+'/'+path;
+  function check(){
+    results.replaceChildren();
+    const raw=input.value.trim().replace(/\/+$/,''); const appends=client.value==='appends-v1';
+    let url;
+    try{url=new URL(raw); if(!['http:','https:'].includes(url.protocol)||url.search||url.hash) throw new Error('Use an absolute http(s) URL without query or fragment.');}
+    catch(e){summary.textContent='Input error: '+e.message; summary.className='warn'; return;}
+    const finalBase=appends?join(raw,'v1'):raw;
+    const checks=[
+      ['models',join(finalBase,'models')],['chat completions',join(finalBase,'chat/completions')],['responses',join(finalBase,'responses')]
+    ];
+    const duplicate=/\/v1\/v1(?:\/|$)/i.test(finalBase); const full=/\/(chat\/completions|responses|models)$/i.test(raw);
+    if(duplicate){summary.textContent='Warning: the client configuration would create /v1/v1.';summary.className='warn';}
+    else if(full){summary.textContent='Warning: this looks like a full endpoint, not a Base URL.';summary.className='warn';}
+    else{summary.textContent='Base URL shape looks usable. The check stayed in your browser.';summary.className='ok';}
+    for(const [name,value] of checks){const card=document.createElement('div');card.className='card '+(duplicate||full?'warn':'ok');card.innerHTML='<strong>'+name+'</strong><code>'+value.replaceAll('&','&amp;').replaceAll('<','&lt;')+'</code>';results.append(card);}
+  }
+  document.querySelector('#check').addEventListener('click',check); check();
+})();
+</script>
+</body></html>

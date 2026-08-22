@@ -31,6 +31,9 @@ jobs:
           assert "https://docs.aifast.hk/en/model-check/" in html
           assert "https://www.aifast.hk/v1" in html
           assert "openai_api_preflight.py" in html
+          with urllib.request.urlopen(base + "/tools/base-url-checker/", timeout=20) as r:
+              tool = r.read().decode("utf-8")
+          assert "OpenAI Base URL Checker" in tool and "v1/v1" in tool
           assert 'application/ld+json' in html and 'FAQPage' in html
           for path in ('robots.txt', 'sitemap.xml'):
               with urllib.request.urlopen(base + '/' + path, timeout=20) as r:
