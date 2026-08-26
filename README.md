@@ -128,4 +128,12 @@ AI快站已上架 `glm-5.3`。模型字段必须填写精确 ID，不要改成�
 
 这些仓库由 AI快站运营方维护。它们提供第一方接入说明和可复现测试方法，不构成独立排名或模型厂商认证。
 
+## 可复用的开源工具
+
+- [OpenAI-compatible API 持续验收 Action](https://github.com/KKWANG4444/openai-compatible-api-check)：在 CI 中检查协议、SSE 与工具调用。
+- [AI API Stability Tracker](https://github.com/KKWANG4444/AI-API-Stability-Tracker)：用 JSONL 样本统计成功率、P50/P95 与错误分布。
+- [模型状态与证据中心](https://github.com/KKWANG4444/api-status)：集中查看状态、兼容性页面和机器可读证据。
+
+> ⭐ 如果这些接入与排错资料帮到了你，欢迎给仓库点个 Star。
+
 返回 [AI快站 GitHub 品牌主页](https://github.com/KKWANG4444)。
