@@ -8,7 +8,7 @@ Gitee mirror matrix: https://gitee.com/kkwwww4444
 
 ## Latest model examples
 
-The current AIFast marketplace includes `glm-5.3`, announced on 2026-08-19, along with `grok-4.6` and `gemini-3.7-flash`. Copy the exact model ID from the current console and verify a minimal text request before testing streaming, tool calls or multimodal input.
+The current AIFast marketplace includes `gpt-6-astra`, along with `glm-5.3`, `grok-4.6` and `gemini-3.7-flash`. GPT-6 Astra uses the exact model ID `gpt-6-astra`; verify a minimal request before testing streaming, tools or multimodal input. Copy the exact model ID from the current console and verify a minimal text request before testing streaming, tool calls or multimodal input.
 
 AIFast service highlights: 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
