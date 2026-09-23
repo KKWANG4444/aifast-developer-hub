@@ -52,10 +52,9 @@ For a live check, set `OPENAI_API_KEY` and optionally pass `--model YOUR_CURRENT
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | Client configuration | Codex, Cursor, Claude Code and protocol-specific capability checks |
 | [`AI-API-Stability-Tracker`](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | Reproducible observation | Time-, region-, network- and sample-bound API baselines |
 
-## 2026-08-19 model update
+## 2026-09-23 model update
 
-AIFast announced `glm-5.3`. Use the exact catalog ID, validate a minimal text request first, and then test SSE, tool calls and workload-specific behavior as needed.
-
+AIFast has listed `gpt-6-sol`, `gpt-6-luna` and `claude-opus-5-5`. Use the exact catalog IDs, validate a minimal text request first, then test SSE, tool calls and workload-specific behavior as needed.
 ## Recommended validation path
 
 1. Use a temporary, limited API key with the [website check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=workflow-online-check-en).
