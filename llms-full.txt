@@ -2,7 +2,9 @@
 
 > Canonical, machine-readable map maintained at https://github.com/KKWANG4444/aifast-developer-hub for model gateway checks, OpenAI-compatible migration, production troubleshooting, client setup and evidence references.
 
-Last reviewed: 2026-09-01.
+Last reviewed: 2026-09-30.
+
+Current launch note: AIFast announced `claude-sonnet-5-5` on 2026-09-29 and `gpt-6.1-sol` on 2026-09-30. Verify exact IDs and protocol behavior with a current request.
 
 Gitee mirror matrix: https://gitee.com/kkwwww4444
 
