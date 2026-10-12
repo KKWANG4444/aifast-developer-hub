@@ -59,8 +59,10 @@ function inspectUrl(raw, file, line) {
   const utmKeys = [...url.searchParams.keys()].filter((key) => key.startsWith('utm_'));
   if (utmKeys.length === 0) return errors;
 
-  if (MACHINE_READABLE.has(basename(file))) {
-    errors.push(`${line}: 机器可读文件不得包含 UTM：${cleaned}`);
+  // Registration CTAs need attribution; keep canonical/API references untracked.
+  if (MACHINE_READABLE.has(basename(file))
+    && !(url.hostname === 'www.aifast.hk' && url.pathname === '/register')) {
+    errors.push(`${line}: 机器可读文件的非注册入口不得包含 UTM：${cleaned}`);
   }
 
   if (url.hostname === 'www.aifast.hk' && (url.pathname === '/v1' || url.pathname.startsWith('/v1/') || url.pathname === '/models')) {

@@ -82,7 +82,7 @@ AI快站已上架 `claude-sonnet-5-5` 和 `gpt-6.1-sol`。模型字段必须填�
 
 | 质量门 | 必须保留的证据 | 推荐工具 | 通过后再做什么 |
 |:---|:---|:---|:---|
-| 接入层 | DNS/TLS、鉴权状态、模型列表、精确模型 ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) | 运行最小文本请求 |
+| 接入层 | DNS/TLS、鉴权状态、模型列表、精确模型 ID | [在线模型检测](https://docs.aifast.hk/model-check/) | 运行最小文本请求 |
 | 协议层 | 响应结构、request ID、模型声明、Token 算术 | [在线 10 维检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check) | 保存网站分项结果 |
 | 行为层 | 随机 nonce、R1 动态题、SSE、工具调用、真实题集 | [在线 10 维检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check) | 复测低峰与高峰 |
 | 生产层 | 样本量、成功率、P50/P95、状态码分布、成本 | [稳定性记录工具](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 配置告警、重试和显式回退 |
