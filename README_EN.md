@@ -67,7 +67,7 @@ AIFast has listed `claude-sonnet-5-5` and `gpt-6.1-sol`. Use the exact catalog I
 
 | Gate | Required evidence | Tool |
 |:---|:---|:---|
-| Access | DNS/TLS, authentication, model listing, exact model ID | [API Doctor](https://github.com/KKWANG4444/llm-api-proxy-china/tree/main/tools) |
+| Access | DNS/TLS, authentication, model listing, exact model ID | [Online model check](https://docs.aifast.hk/model-check/) |
 | Protocol | Response structure, request ID, model claim, token arithmetic | [Online 10-dimension check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-protocol-check-en) |
 | Behavior | Random nonce, dynamic challenge, SSE, tool calls, workload tests | [Online 10-dimension check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=gate-behavior-check-en) |
 | Production | Sample count, success rate, p50/p95, status distribution, cost | [JSONL stability tool](https://github.com/KKWANG4444/AI-API-Stability-Tracker) |

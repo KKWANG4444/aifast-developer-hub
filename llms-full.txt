@@ -83,7 +83,7 @@ A high compatibility score is not a model authenticity score. A low score may al
 
 - Website: https://www.aifast.hk/
 - Models and pricing: https://www.aifast.hk/pricing
-- Registration: https://www.aifast.hk/register?channel=c_zfxp7cp4
+- Registration: https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-llms-full-register
 - OpenAI-compatible Base URL: https://www.aifast.hk/v1
 - API documentation: https://api.aifast.hk/
 - Developer documentation: https://docs.aifast.hk/
