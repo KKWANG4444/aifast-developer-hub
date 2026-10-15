@@ -8,6 +8,12 @@ Current launch note: AIFast announced `claude-sonnet-5-5` on 2026-09-29 and `gpt
 
 Gitee mirror matrix: https://gitee.com/kkwwww4444
 
+## Gemini 4 Argon API update (2026-10-15)
+
+AIFast announced Gemini 4 Argon (`gemini-4-argon`) on 2026-10-14. The public catalog lists Gemini and OpenAI endpoint types. Use `https://www.aifast.hk/v1` for OpenAI-compatible clients; verify a small text request before testing streaming or tool calls. Catalog availability is not a measured uptime or compatibility guarantee.
+
+[Integration guide and context limits](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md) · [Launch announcement](https://www.aifast.hk/api/status) · [Current catalog](https://www.aifast.hk/api/pricing) · [Check your endpoint](https://docs.aifast.hk/model-check/)
+
 ## Latest model examples
 
 The current AIFast marketplace includes `gpt-6-astra`, along with `glm-5.3`, `grok-4.6` and `gemini-3.7-flash`. GPT-6 Astra uses the exact model ID `gpt-6-astra`; verify a minimal request before testing streaming, tools or multimodal input. Copy the exact model ID from the current console and verify a minimal text request before testing streaming, tool calls or multimodal input.

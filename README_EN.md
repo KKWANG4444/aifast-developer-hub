@@ -8,6 +8,14 @@
 
 This repository is a practical entry point for **OpenAI-compatible API testing**, **Cursor custom API**, **Dify custom model API** and **Claude Code custom provider** setup. Verify the Base URL, API key and model ID first; then test streaming and tool calls and troubleshoot 401, 404, 429, 5xx and timeout errors. Examples are reproducible and state their evidence boundaries.
 
+[![Gemini 4 Argon update](https://img.shields.io/badge/Gemini_4_Argon-2026--10--15-blue)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md)
+
+## Gemini 4 Argon API update (2026-10-15)
+
+AIFast announced Gemini 4 Argon (`gemini-4-argon`) on 2026-10-14. The public catalog lists Gemini and OpenAI endpoint types. Use `https://www.aifast.hk/v1` for OpenAI-compatible clients; verify a small text request before testing streaming or tool calls. Catalog availability is not a measured uptime or compatibility guarantee.
+
+[Integration guide and context limits](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md) · [Launch announcement](https://www.aifast.hk/api/status) · [Current catalog](https://www.aifast.hk/api/pricing) · [Check your endpoint](https://docs.aifast.hk/model-check/)
+
 ## Run an API preflight in one command
 
 The repository includes a dependency-free preflight script. It validates the final endpoint paths and can check model listing plus a minimal chat request. The API key is read only from the environment and is never printed.

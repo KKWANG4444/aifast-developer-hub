@@ -10,6 +10,14 @@
 
 这是一个面向 **OpenAI-compatible API 测试与排错** 的实操入口，覆盖 **Cursor 自定义 API、Dify 自定义模型 API、Claude Code 国内 API** 等高频配置场景：先验证 Base URL、API Key 和模型 ID，再检查流式输出、工具调用与模型行为，最后处理 401、404、429、5xx 和超时。示例强调可复制、可复测，并注明证据和结论边界。
 
+[![Gemini 4 Argon update](https://img.shields.io/badge/Gemini_4_Argon-2026--10--15-blue)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md)
+
+## Gemini 4 Argon API update (2026-10-15)
+
+AIFast announced Gemini 4 Argon (`gemini-4-argon`) on 2026-10-14. The public catalog lists Gemini and OpenAI endpoint types. Use `https://www.aifast.hk/v1` for OpenAI-compatible clients; verify a small text request before testing streaming or tool calls. Catalog availability is not a measured uptime or compatibility guarantee.
+
+[Integration guide and context limits](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md) · [Launch announcement](https://www.aifast.hk/api/status) · [Current catalog](https://www.aifast.hk/api/pricing) · [Check your endpoint](https://docs.aifast.hk/model-check/)
+
 ## 一条命令做API预检
 
 仓库现在提供零依赖的预检脚本，先检查最终URL拼接，再按需验证模型列表和最小文本请求。API Key只从环境变量读取，脚本不会打印密钥。
