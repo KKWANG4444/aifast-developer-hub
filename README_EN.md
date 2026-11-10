@@ -4,7 +4,9 @@
 
 > **AIFast links:** [Start by task](https://docs.aifast.hk/en/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start-en) · [Website](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website-en) · [Models and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing-en) · [Payment and account setup](https://docs.aifast.hk/en/payment/?utm_source=github&utm_medium=repository&utm_campaign=international-payment&utm_content=developer-hub-payment-en) · [API docs](https://api.aifast.hk/) · [Codex setup](https://docs.aifast.hk/en/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex-en) · [Online model check](https://docs.aifast.hk/en/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check-en)
 
-**Service highlights: 99% model availability · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
+**Service highlights: 99% model availability (operator claim) · 500+ models · fast and stable calls · direct mainland China access · business invoices.**
+
+The 99% figure is an operator claim, not a measured result from this repository or an independent SLA. Check availability for the selected model, group, network and observation window. Source and scope: https://docs.aifast.hk/en/reference/platform-facts/
 
 This repository is a practical entry point for **OpenAI-compatible API testing**, **Cursor custom API**, **Dify custom model API** and **Claude Code custom provider** setup. Verify the Base URL, API key and model ID first; then test streaming and tool calls and troubleshoot 401, 404, 429, 5xx and timeout errors. Examples are reproducible and state their evidence boundaries.
 

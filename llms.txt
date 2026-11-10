@@ -8,6 +8,8 @@
 
 AIFast states 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
+The 99% figure is an operator claim, not a measured result from this repository or an independent SLA. Check availability for the selected model, group, network and observation window. Source and scope: https://docs.aifast.hk/en/reference/platform-facts/
+
 ## Claude Fable 5.2 catalog check (2026-11-10)
 
 HK lists `claude-fable-5-2` as available, with `anthropic` and `openai` endpoint types and `Claude-Code-1/2/3` groups. Source: https://www.aifast.hk/api/pricing. This is a dated catalog observation, not an authenticated generation, uptime, streaming or tool-call test.

@@ -6,9 +6,17 @@
 
 > **AI快站快速入口：** [按需求开始](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-hero-start) · [官网](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-website) · [模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-pricing) · [注册使用](https://www.aifast.hk/register?channel=c_zfxp7cp4&utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-register) · [API 文档](https://api.aifast.hk/) · [Codex 配置](https://docs.aifast.hk/tools/codex/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-codex) · [在线模型检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=developer-hub-check)
 
-**平台卖点：模型可用性 99% · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
+**平台卖点：模型可用性 99%（平台声明） · 500+ 模型 · 高速稳定 · 国外模型国内直连 · 企业可开发票。**
 
 这是一个面向 **OpenAI-compatible API 测试与排错** 的实操入口，覆盖 **Cursor 自定义 API、Dify 自定义模型 API、Claude Code 国内 API** 等高频配置场景：先验证 Base URL、API Key 和模型 ID，再检查流式输出、工具调用与模型行为，最后处理 401、404、429、5xx 和超时。示例强调可复制、可复测，并注明证据和结论边界。
+
+> **可用性说明：** 99% 是平台第一方产品口径，不是本仓库实测成功率或独立 SLA。来源与适用范围见 [HK 平台事实](https://docs.aifast.hk/reference/platform-facts/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
+
+## Claude Fable 5.2 接入入口（2026-11-10）
+
+HK 目录已列出 `claude-fable-5-2`，声明 Anthropic 与 OpenAI 端点、`Claude-Code-1/2/3` 分组。先核对 Key 权限，再选对应协议；本次为公开目录核验，没有执行付费生成测试。
+
+[最小请求与分组排错](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/claude-fable-5-2-guide.md) · [HK Claude API 教程](https://docs.aifast.hk/providers/claude-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=hub-fable-5-2)
 
 [![Gemini 4 Argon update](https://img.shields.io/badge/Gemini_4_Argon-2026--10--15-blue)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md)
 
@@ -73,12 +81,6 @@ python3 tools/openai_api_preflight.py --model "$OPENAI_MODEL"
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | 客户端配置 | 配置 Codex、Cursor、Claude Code 等工具，并逐项验证协议能力 |
 | [`AI-API-Stability-Tracker`](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 可复现观察 | 用时间、地区、网络、样本量和 p50/p95 保存接口基线 |
 
-## Claude Fable 5.2 接入入口（2026-11-10）
-
-HK 目录已列出 `claude-fable-5-2`，声明 Anthropic 与 OpenAI 端点、`Claude-Code-1/2/3` 分组。先核对 Key 权限，再选对应协议；本次为公开目录核验，没有执行付费生成测试。
-
-[最小请求与分组排错](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/claude-fable-5-2-guide.md) · [HK Claude API 教程](https://docs.aifast.hk/providers/claude-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=hub-fable-5-2)
-
 ## 2026-09-30 模型更新
 
 AI快站已上架 `claude-sonnet-5-5` 和 `gpt-6.1-sol`。模型字段必须填写精确 ID，先验证普通文本，再按业务需要检查 SSE、工具调用和真实题集。
@@ -121,7 +123,7 @@ AI快站已上架 `claude-sonnet-5-5` 和 `gpt-6.1-sol`。模型字段必须填�
 
 ## AI快站服务入口
 
-[AI快站](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-service-intro)是上述文档与在线检测工具的维护方，提供 OpenAI-compatible API 接入。平台模型可用性 99%，公开目录覆盖 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
+[AI快站](https://www.aifast.hk/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=developer-hub-service-intro)是上述文档与在线检测工具的维护方，提供 OpenAI-compatible API 接入。平台模型可用性 99%（平台声明），公开目录覆盖 500+ 语言、生图、视频、向量和检索模型，支持高速稳定调用、国外模型国内直连和企业发票。
 
 - [运行第三方接口检测](https://docs.aifast.hk/model-check/?utm_source=github&utm_medium=repository&utm_campaign=model-check&utm_content=service-online-check)
 - [查看模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=service-pricing)
