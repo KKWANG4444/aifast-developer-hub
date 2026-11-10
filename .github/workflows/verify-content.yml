@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: 检查站点地图日期与规范地址
+        run: python3 scripts/audit-sitemap.py
       - name: Verify human and machine-readable entry points
         shell: bash
         run: |

@@ -20,6 +20,7 @@ jobs:
           set -euo pipefail
           python3 - <<'PY'
           import json, os, urllib.request
+          from xml.etree import ElementTree
           repo = os.environ['REPOSITORY']
           rev = os.environ['REVISION']
           base = f"https://raw.githubusercontent.com/{repo}/{rev}"
@@ -41,5 +42,10 @@ jobs:
           for path in ('robots.txt', 'sitemap.xml'):
               with urllib.request.urlopen(base + '/' + path, timeout=20) as r:
                   assert r.status == 200 and r.read()
+          with urllib.request.urlopen(base + '/sitemap.xml', timeout=20) as r:
+              sitemap = ElementTree.fromstring(r.read())
+          ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          home = [item for item in sitemap.findall('s:url', ns) if item.findtext('s:loc', namespaces=ns) == 'https://kkwang4444.github.io/aifast-developer-hub/']
+          assert len(home) == 1 and home[0].findtext('s:lastmod', namespaces=ns) == '2026-11-10'
           print(json.dumps({"index": "ok", "h1": 1, "seo_geo": "ok", "bytes": len(html)}))
           PY
