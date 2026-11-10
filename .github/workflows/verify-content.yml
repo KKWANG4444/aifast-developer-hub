@@ -27,7 +27,9 @@ jobs:
           grep -Fq 'https://docs.aifast.hk/tools/codex/' README.md
           grep -Fq 'https://docs.aifast.hk/troubleshooting/codex-gateway-checklist/' README.md
           grep -Fq 'https://docs.aifast.hk/guides/model-check-report-guide/' README.md
-          ! grep -Fq 'openai-compatible-api-check' README.md
+          grep -Fq '普通用户仍在网页检测' README.md
+          grep -Fq 'claude-fable-5-2' README.md
+          grep -Fq 'claude-fable-5-2' README_EN.md
           grep -Fq 'https://docs.aifast.hk/start/' llms.txt
           grep -Fq 'https://docs.aifast.hk/start/' llms-full.txt
           grep -Fq 'https://docs.aifast.hk/tools/codex/' llms.txt

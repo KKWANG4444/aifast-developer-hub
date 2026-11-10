@@ -73,6 +73,12 @@ python3 tools/openai_api_preflight.py --model "$OPENAI_MODEL"
 | [`ai-api-proxy-china-guide`](https://github.com/KKWANG4444/ai-api-proxy-china-guide) | 客户端配置 | 配置 Codex、Cursor、Claude Code 等工具，并逐项验证协议能力 |
 | [`AI-API-Stability-Tracker`](https://github.com/KKWANG4444/AI-API-Stability-Tracker) | 可复现观察 | 用时间、地区、网络、样本量和 p50/p95 保存接口基线 |
 
+## Claude Fable 5.2 接入入口（2026-11-10）
+
+HK 目录已列出 `claude-fable-5-2`，声明 Anthropic 与 OpenAI 端点、`Claude-Code-1/2/3` 分组。先核对 Key 权限，再选对应协议；本次为公开目录核验，没有执行付费生成测试。
+
+[最小请求与分组排错](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/claude-fable-5-2-guide.md) · [HK Claude API 教程](https://docs.aifast.hk/providers/claude-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=hub-fable-5-2)
+
 ## 2026-09-30 模型更新
 
 AI快站已上架 `claude-sonnet-5-5` 和 `gpt-6.1-sol`。模型字段必须填写精确 ID，先验证普通文本，再按业务需要检查 SSE、工具调用和真实题集。

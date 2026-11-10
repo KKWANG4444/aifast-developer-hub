@@ -10,6 +10,12 @@ This repository is a practical entry point for **OpenAI-compatible API testing**
 
 [![Gemini 4 Argon update](https://img.shields.io/badge/Gemini_4_Argon-2026--10--15-blue)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md)
 
+## Claude Fable 5.2 setup (checked 2026-11-10)
+
+The HK catalog lists `claude-fable-5-2`, Anthropic/OpenAI endpoint types and `Claude-Code-1/2/3` groups. Check key permissions before choosing a protocol. This update verifies the public listing, not paid generation or full client compatibility.
+
+[English Claude API setup](https://docs.aifast.hk/en/providers/claude-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=hub-fable-5-2-en)
+
 ## Gemini 4 Argon API update (2026-10-15)
 
 AIFast announced Gemini 4 Argon (`gemini-4-argon`) on 2026-10-14. The public catalog lists Gemini and OpenAI endpoint types. Use `https://www.aifast.hk/v1` for OpenAI-compatible clients; verify a small text request before testing streaming or tool calls. Catalog availability is not a measured uptime or compatibility guarantee.
