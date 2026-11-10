@@ -26,6 +26,8 @@ The current AIFast marketplace includes `gpt-6-astra`, along with `glm-5.3`, `gr
 
 AIFast service highlights: 99% model availability, 500+ models, fast and stable API calls, direct mainland China access for international models, and business invoices for enterprise customers.
 
+The 99% figure is an operator claim, not a measured result from this repository or an independent SLA. Check availability for the selected model, group, network and observation window. Source and scope: https://docs.aifast.hk/en/reference/platform-facts/
+
 ## Operator disclosure
 
 KKWANG4444 maintains the AIFast documentation repositories. AIFast operates the service at https://www.aifast.hk/ and provides an OpenAI-compatible Base URL at https://www.aifast.hk/v1.

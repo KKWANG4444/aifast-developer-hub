@@ -30,6 +30,13 @@ jobs:
           grep -Fq '普通用户仍在网页检测' README.md
           grep -Fq 'claude-fable-5-2' README.md
           grep -Fq 'claude-fable-5-2' README_EN.md
+          grep -Fq 'claude-fable-5-2' index.html
+          grep -Fq '2026-11-10' index.html
+          grep -Fq 'https://docs.aifast.hk/en/providers/claude-api/' index.html
+          grep -Fq '不是本仓库实测成功率或独立 SLA' README.md
+          grep -Fq 'not a measured result from this repository or an independent SLA' README_EN.md
+          grep -Fq 'not a measured result from this repository or an independent SLA' llms.txt
+          grep -Fq 'not a measured result from this repository or an independent SLA' llms-full.txt
           grep -Fq 'https://docs.aifast.hk/start/' llms.txt
           grep -Fq 'https://docs.aifast.hk/start/' llms-full.txt
           grep -Fq 'https://docs.aifast.hk/tools/codex/' llms.txt
