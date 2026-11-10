@@ -47,6 +47,8 @@ python3 tools/openai_api_preflight.py --model "$OPENAI_MODEL"
 
 输出会把结果归类为鉴权、路径、限流、上游或网络问题。生产验收仍需按实际负载单独测试SSE、工具调用、图片输入、并发和回退。
 
+预检不跟随重定向，公开目标必须使用 HTTPS；错误报告会移除上游回显的当前 Key。HTTP 200 只有在模型列表或文本响应结构正确时才会通过，HTML 登录页、空响应和错误对象均不会通过。本机模拟服务可显式使用 `--allow-insecure-localhost`，该选项不允许其他地址通过 HTTP 发送 Key。单次响应上限 1 MiB；真实模型请求会消耗额度。
+
 如果你只想解决一个问题：把现有 OpenAI SDK 项目接入一个兼容网关并确认它真的可用，请从[首次调用与兼容性检查](https://docs.aifast.hk/start/?utm_source=github&utm_medium=repository&utm_campaign=developer_acquisition&utm_content=developer-hub-primary-intent)开始。
 
 ## 按你现在的问题选择入口
