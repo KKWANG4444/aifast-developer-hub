@@ -12,6 +12,14 @@
 
 > **可用性说明：** 99% 是平台第一方产品口径，不是本仓库实测成功率或独立 SLA。来源与适用范围见 [HK 平台事实](https://docs.aifast.hk/reference/platform-facts/)，实际可用性应按模型、分组、部署网络和统计窗口测量。
 
+## Gemini 4 Hydrogen / Carbon 接入更新（2026-11-17）
+
+HK [上架公告](https://www.aifast.hk/api/announcements)已发布 `gemini-4-hydrogen`（11 月 13 日）和 `gemini-4-carbon`（11 月 11 日）。2026-11-17 [公开目录](https://www.aifast.hk/api/pricing)均标记 `available=true`，声明 `gemini`、`openai` 端点类型；OpenAI-compatible Base URL 保持 `https://www.aifast.hk/v1`。
+
+在 OpenAI-compatible 客户端中填写精确模型 ID；Claude Code 使用不同协议，不能仅凭 Gemini 上架推断其兼容性。 本次没有执行付费推理，目录记录不证明生成、SSE、工具调用或模型身份。
+
+[Hydrogen / Carbon 分组与接入教程](https://docs.aifast.hk/providers/gemini-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=aifast-developer-hub-gemini) · [当前模型与价格](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=aifast-developer-hub-gemini-pricing)
+
 ## Claude Fable 5.2 接入入口（2026-11-10）
 
 HK 目录已列出 `claude-fable-5-2`，声明 Anthropic 与 OpenAI 端点、`Claude-Code-1/2/3` 分组。先核对 Key 权限，再选对应协议；本次为公开目录核验，没有执行付费生成测试。

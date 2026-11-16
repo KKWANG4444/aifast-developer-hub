@@ -18,7 +18,7 @@ class SitemapTests(unittest.TestCase):
             root = Path(directory)
             (root / 'index.html').write_text((ROOT / 'index.html').read_text(), encoding='utf-8')
             (root / 'sitemap.xml').write_text(
-                (ROOT / 'sitemap.xml').read_text().replace('2026-11-10', '2026-09-01'), encoding='utf-8')
+                (ROOT / 'sitemap.xml').read_text().replace('2026-11-17', '2026-09-01'), encoding='utf-8')
             with self.assertRaisesRegex(AssertionError, '日期早于正文更新'):
                 MODULE.audit(root)
 
