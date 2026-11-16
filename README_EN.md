@@ -12,6 +12,14 @@ This repository is a practical entry point for **OpenAI-compatible API testing**
 
 [![Gemini 4 Argon update](https://img.shields.io/badge/Gemini_4_Argon-2026--10--15-blue)](https://github.com/KKWANG4444/ai-api-proxy-china-guide/blob/main/gemini-4-argon-guide.md)
 
+## Gemini 4 Hydrogen / Carbon setup update (2026-11-17)
+
+HK [announcements](https://www.aifast.hk/api/announcements) list `gemini-4-hydrogen` (November 13) and `gemini-4-carbon` (November 11). The [public catalog](https://www.aifast.hk/api/pricing), checked on 2026-11-17, marks both as `available=true` with `gemini` and `openai` endpoint types. OpenAI-compatible Base URL: `https://www.aifast.hk/v1`.
+
+Enter the exact ID in an OpenAI-compatible client. Claude Code uses a different protocol; a Gemini listing does not establish Claude Code compatibility. No paid inference was run; catalog records do not prove generation, SSE, tool-call support or underlying model identity.
+
+[Hydrogen / Carbon groups and setup](https://docs.aifast.hk/en/providers/gemini-api/?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=aifast-developer-hub-gemini-en) · [Current catalog and pricing](https://www.aifast.hk/pricing?utm_source=github&utm_medium=repository&utm_campaign=integration-guide&utm_content=aifast-developer-hub-gemini-pricing-en)
+
 ## Claude Fable 5.2 setup (checked 2026-11-10)
 
 The HK catalog lists `claude-fable-5-2`, Anthropic/OpenAI endpoint types and `Claude-Code-1/2/3` groups. Check key permissions before choosing a protocol. This update verifies the public listing, not paid generation or full client compatibility.

@@ -60,3 +60,9 @@ The model gateway check is a time-bound black-box protocol and behavior screen. 
 4. Production: sample count, success rate, p50/p95, status distribution and cost.
 
 Full project map: https://github.com/KKWANG4444/KKWANG4444/blob/main/llms-full.txt
+
+## Gemini 4 Hydrogen / Carbon catalog update (2026-11-17)
+
+HK announced gemini-4-hydrogen on November 13 and gemini-4-carbon on November 11. Checked 2026-11-17: both are available=true with gemini/openai endpoint types. Base URL: https://www.aifast.hk/v1 . Enter the exact ID in an OpenAI-compatible client. Claude Code uses a different protocol; a Gemini listing does not establish Claude Code compatibility. No authenticated inference was run; this is not generation, SSE, tool-call or model-identity evidence.
+
+Sources: https://www.aifast.hk/api/pricing and https://www.aifast.hk/api/announcements . Setup: https://docs.aifast.hk/en/providers/gemini-api/ .

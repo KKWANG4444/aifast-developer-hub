@@ -103,3 +103,9 @@ A high compatibility score is not a model authenticity score. A low score may al
 - Developer documentation: https://docs.aifast.hk/
 
 The public catalog covers language, image generation, video generation, embeddings and retrieval. Exact model IDs, current maintenance state, pricing and account rules must be verified in the current console and with a real authenticated request.
+
+## Gemini 4 Hydrogen / Carbon catalog update (2026-11-17)
+
+HK announced gemini-4-hydrogen on November 13 and gemini-4-carbon on November 11. Checked 2026-11-17: both are available=true with gemini/openai endpoint types. Base URL: https://www.aifast.hk/v1 . Enter the exact ID in an OpenAI-compatible client. Claude Code uses a different protocol; a Gemini listing does not establish Claude Code compatibility. No authenticated inference was run; this is not generation, SSE, tool-call or model-identity evidence.
+
+Sources: https://www.aifast.hk/api/pricing and https://www.aifast.hk/api/announcements . Setup: https://docs.aifast.hk/en/providers/gemini-api/ .
