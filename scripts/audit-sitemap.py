@@ -1,8 +1,9 @@
 import re
-from datetime import date
+from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from xml.etree import ElementTree
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://kkwang4444.github.io/aifast-developer-hub/'
@@ -24,7 +25,9 @@ class Page(HTMLParser):
         self.text.append(text)
 
 
-def audit(root=ROOT):
+def audit(root=ROOT, now=None):
+    # 无时区的发布日期按香港编辑时区解释，避免 UTC 午夜前误判。
+    today = (now or datetime.now(timezone.utc)).astimezone(ZoneInfo('Asia/Hong_Kong')).date()
     sitemap = ElementTree.parse(root / 'sitemap.xml')
     seen = set()
     for entry in sitemap.findall('s:url', NAMESPACE):
@@ -39,7 +42,7 @@ def audit(root=ROOT):
         page.feed(path.read_text(encoding='utf-8'))
         assert page.canonical == [url], f'Canonical 与 Sitemap 不一致：{url}'
         changed = date.fromisoformat(entry.findtext('s:lastmod', namespaces=NAMESPACE))
-        assert changed <= date.today(), f'更新时间在未来：{url}'
+        assert changed <= today, f'更新时间在未来：{url}'
         # 仅将页面明确标注的更新日期作为下限，不把所有文章日期当作发布日期。
         dates = re.findall(r'(?:Checked on|Updated)\s+(\d{4}-\d{2}-\d{2})', ' '.join(page.text))
         assert all(changed >= date.fromisoformat(value) for value in dates), f'Sitemap 日期早于正文更新：{url}'
